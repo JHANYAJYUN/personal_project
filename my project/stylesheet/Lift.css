@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap&subset=japanese,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,600,700,900&display=swap&subset=japanese');
+
+
+.topbanner {
+
+  background: url("../image/lift.png") center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+
+#openTime,
+#ticketFee,
+#rule,
+#parkFee,
+#beginnerFee {
+  padding: 35px 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.openTimeForm {
+  width: 100%;
+
+}
+
+#openTimeForm {
+  line-height: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#openTimeForm_forSm .openTimeForm:first-child {
+  color: #000000;
+  font-weight: 800;
+}
+
+#openTimeForm .openTimeForm .openTimeFormTitle {
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.openTimeForm td {
+  width: 40px;
+  border: 2px solid #cccccc;
+  color: #555555;
+  text-align: center;
+  font-family: 'Noto Sans JP', serif;
+  font-size: 16px;
+}
+
+.openTime {
+  position: relative;
+  padding: 50px 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+
+}
+
+.liftPic1 {
+  position: absolute;
+  right: 2%;
+  top: -30%;
+  transform: rotate(15deg);
+}
+
+.liftPic2 {
+  position: absolute;
+  left: 0%;
+  top: 320%;
+  transform: rotate(15deg);
+}
+
+.openTime p {
+  background-color: rgba(4, 151, 195);
+  height: 3rem;
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+#openTimeForm_forSm {
+  display: none;
+}
+
+.ticket {
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.ticket img {
+
+  width: 50%;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+#accordion .panel {
+  border: none;
+  border-top: 1px solid #e8e8e8;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+#accordion .panel:last-child {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+#accordion .panel-heading {
+  padding: 0;
+}
+
+#accordion .panel-title a {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  color: #464646;
+  background: #fff;
+  padding: 15px 20px 15px 47px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#accordion .panel-title a:before {
+  content: " － ";
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background: rgba(4, 151, 195, 0.7);
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a.collapsed:before {
+  content: " ＋ ";
+}
+
+#accordion .panel-body {
+  font-size: 15px;
+  color: #635858;
+  line-height: 25px;
+  border: none;
+  padding: 0 20px 10px 47px;
+}
+
+.fancytable {
+  border: 1px solid #cccccc;
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 35px;
+}
+
+tr {
+  width: 100%;
+}
+
+.fancytable td {
+  border: 1px solid #cccccc;
+  color: #555555;
+  text-align: center;
+  font-family: 'Noto Sans JP', serif;
+  font-size: 16px;
+}
+
+.headerrow {
+  background: rgba(4, 151, 195, 0.7);
+}
+
+.headerrow td {
+  font-family: 'Noto Sans JP', serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.datarowodd {
+  background-color: #ffffff;
+}
+
+.dataroweven {
+  background-color: #efefef;
+}
+
+.datarowodd td {
+  background-color: #ffffff;
+}
+
+.dataroweven td {
+  background-color: #efefef;
+}
+
+#rule {
+  margin-top: 100px;
+}
+
+.priceRule {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+}
+
+.priceRule p {
+  background-color: rgb(4, 151, 195);
+  height: 3rem;
+  padding-top: 10px;
+  font-size: 1.31rem;
+  color: white;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+#parkFee,
+#beginnerFee {
+  position: relative;
+
+}
+
+#parkFee img {
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  z-index: 10;
+
+}
+
+#beginnerFee img {
+  top: 40%;
+  position: absolute;
+  right: 0%;
+  z-index: 10;
+}
+
+.parkFeeLine {
+  width: 60%;
+  height: 1px;
+  background-color: rgba(4, 151, 195);
+  margin-bottom: 3%;
+}
+
+.parkFee h5,
+.beginnerFee h5 {
+  margin-bottom: 3%;
+  color: rgba(4, 151, 195);
+  margin-top: 1%;
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.parkFee p,
+.beginnerFee p {
+
+  width: 80%;
+  color: #555555;
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.ulText {
+  width: 100%;
+  font-size: 26px;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 10px 0;
+}
+
+.ulText li {
+  font-size: 0.875rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5rem;
+  margin-left: 20px;
+
+}
+
+.ulText li img {
+  width: 100%;
+
+}
+
+
+
+#paymentPic {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  #openTime,
+  #ticketFee,
+  #rule,
+  #parkFee,
+  #beginnerFee {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #paymentPic {
+    display: flex;
+    list-style: none;
+  }
+
+  .ticket {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .parkFee .parkP_One p,
+  .beginnerFee_One p {
+    line-height: 30px;
+    width: 60%;
+    color: #555555;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+  }
+
+
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width:767px) {
+
+  #openTime,
+  #ticketFee,
+  #rule,
+  #parkFee,
+  #beginnerFee {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #openTimeForm {
+    display: none;
+  }
+
+  .ticket {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .ticket img {
+    width: 100%;
+  }
+
+  .liftPic2 {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 320%;
+    transform: rotate(15deg);
+  }
+
+  #openTime {
+    margin: 0 auto;
+  }
+
+  #openTimeForm_forSm {
+    min-width: 100%;
+    width: 100%;
+    display: block;
+    padding: 2% 0 0 0;
+  }
+
+  #openTimeForm_forSm .openTimeForm {
+    width: 100%;
+  }
+
+  .openTimeForm span {
+    opacity: 0;
+  }
+
+  .openTimeForm td {
+    width: 100%;
+    border: 2px solid #cccccc;
+    color: #555555;
+    text-align: center;
+    font-family: 'Noto Sans JP', serif;
+    font-size: 16px;
+  }
+
+  .parkFee,
+  .beginnerFee {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #parkFee img {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 10;
+
+  }
+
+  #beginnerFee img {
+    position: absolute;
+    top: 58%;
+    right: 3%;
+    z-index: 10;
+  }
+
+  .parkFeeLine {
+    width: 60%;
+    height: 1px;
+    background-color: rgba(4, 151, 195);
+    margin-bottom: 3%;
+  }
+
+  .parkFee h5,
+  .beginnerFee h5 {
+    margin-bottom: 3%;
+    color: rgba(4, 151, 195);
+    margin-top: 10%;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+  }
+
+  .parkFee .parkP_One p,
+  .beginnerFee_One p {
+    line-height: 30px;
+    width: 100%;
+    color: #555555;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+  }
+
+
+  .parkFee .parkP_Two p,
+  .beginnerFee_Two p {
+    line-height: 30px;
+    width: 50%;
+    color: #555555;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+  }
+
+
+  #paymentPic {
+    width: 100%;
+    display: block;
+    list-style: none;
+
+  }
+
+  .ulText {
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 10px 0;
+  }
+
+  .ulText li {
+    font-size: 14;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 2rem;
+    margin-left: 20px;
+
+  }
+
+  .headerrow td {
+    font-family: 'Noto Sans JP', serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (max-width: 499px) {
+
+  #openTime,
+  #ticketFee,
+  #rule,
+  #parkFee,
+  #beginnerFee {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #openTimeForm {
+    display: none;
+  }
+  .openTimeForm span {
+    opacity: 0;
+    display: none;
+  }
+
+  .ticket {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .ticket img {
+    width: 100%;
+  }
+
+  .liftPic2 {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 320%;
+    transform: rotate(15deg);
+  }
+  .liftPic1 {
+    position: absolute;
+    right: 0%;
+    top: -30%;
+    transform: rotate(15deg);
+  }
+  .liftPic1 img{
+    width: 75%;
+  }
+
+  #openTime {
+    margin: 0 auto;
+  }
+
+  #openTimeForm_forSm {
+    width: 100%;
+    display: block;
+    padding: 2% 0 0 0;
+  }
+
+  #openTimeForm_forSm .openTimeForm {
+    width: 100%;
+  }
+
+  .openTimeForm span {
+    opacity: 0;
+  }
+
+  .openTimeForm td {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    border: 2px solid #cccccc;
+    color: #555555;
+    text-align: center;
+    font-family: 'Noto Sans JP', serif;
+    font-size: 16px;
+  }
+
+  .parkFee {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .beginnerFee{
+    width: 90%;
+    margin: 0 auto;
+  }
+  #parkFee img {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 10;
+
+  }
+
+  #beginnerFee img {
+    position: absolute;
+    width: 50%;
+    top: 58%;
+    right: 1%;
+    z-index: 10;
+  }
+
+  .parkFeeLine {
+    width: 60%;
+    height: 1px;
+    background-color: rgba(4, 151, 195);
+    margin-bottom: 3%;
+  }
+
+  .parkFee h5,
+  .beginnerFee h5 {
+    margin-bottom: 3%;
+    color: rgba(4, 151, 195);
+    margin-top: 10%;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+  }
+
+  .parkFee .parkP_One p,
+  .beginnerFee_One p {
+    line-height: 30px;
+    width: 100%;
+    color: #555555;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+  }
+
+
+  .parkFee .parkP_Two p,
+  .beginnerFee_Two p {
+    line-height: 30px;
+    width: 40%;
+    color: #555555;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+  }
+
+
+  #paymentPic {
+    width: 100%;
+    display: block;
+    list-style: none;
+
+  }
+
+  .ulText {
+    width: 90%;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 10px 0;
+  }
+
+  .ulText li {
+    font-size: 14;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 2rem;
+    margin-left: 20px;
+
+  }
+
+  .headerrow td {
+    font-family: 'Noto Sans JP', serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+}

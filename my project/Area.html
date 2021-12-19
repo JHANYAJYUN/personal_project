@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>スキーエリア</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./stylesheet/hamburgers.css">
+    <link rel="stylesheet" href="./stylesheet/animate.min.css">
+    <link rel="stylesheet" href="./stylesheet/Common.css">
+    <link rel="stylesheet" href="./stylesheet/Area.css">
+</head>
+
+<body>
+    <header>
+        <div class="suportArea">
+            <a href="./form.html">
+                <div class="suport"><span> お問い合わせ</span></div>
+            </a>
+        </div>
+        <div id="headerBanner">
+            <nav id="navbar2">
+                <ul>
+                    <li class="logo"><a href="./index.html">
+                            <img src="./image/logo_black-08.png" alt=""></a>
+                    </li>
+                    <li><a href="./Area.html">
+                            <div class="underline">
+                                <p style="color: rgba(182, 155, 0, 0.9); font-weight: 700; ">ゲレンデ</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Lift.html">
+                            <div class="underline">
+                                <p>リフト料金</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+                    <li id="hotelBox2" onmouseover="switchMenu2( this, 'hotelBoxInside2', 'MouseOver' )"
+                        onmouseout="hideMenu2()"> <a href="#">
+                            <div class="circle">
+                                <p>ホテル</p>
+                            </div>
+                        </a>
+                        <div id="hotelBoxInside2">
+                            <ul>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/Navhotel1.jpg" alt="">
+                                        <h5>王子第一ホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel2.jpg" alt="">
+                                        <h5>パウダーホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel3.jpg" alt="">
+                                        <h5>綾会館</h5>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./Dining.html">
+                            <div class="underline">
+                                <p> レストラン</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Rental.html">
+                            <div class="underline">
+                                <p>レンタル</p>
+                            </div>
+                        </a></li>
+
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./school.html">
+                            <div class="underline">
+                                <p> スクール</p>
+                            </div>
+                        </a></li>
+
+                </ul>
+            </nav>
+
+
+            <div id="ham">
+                <ul>
+                    <a href="./index.html">
+                        <li>
+                            <h2>トップページ</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Area.html">
+                        <li>
+                            <h2> ゲレンデ</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Lift.html">
+                        <li>
+                            <h2>リフト料金</h2>
+                        </li>
+                    </a><br>
+                    <a href="./hotel.html">
+                        <li>
+                            <h2>ホテル</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Dining.html">
+                        <li>
+                            <h2>レストラン</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Rental.html">
+                        <li>
+                            <h2>レンタル</h2>
+                        </li>
+                    </a><br>
+                    <a href="./school.html">
+                        <li>
+                            <h2>スクール</h2>
+                        </li>
+                    </a><br>
+                    <a href="./form.html">
+                        <li>
+                            <h2>お問い合わせ<h2>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div id="hamIcon">
+                <button type="button" name="btn" class="hamburger hamburger--slider" id="hamburgerIcon">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <div class="hamburgerBlack"><img src="./image/hamburger-Circle.svg" alt=""></div>
+
+                </button>
+            </div>
+
+        </div>
+        <div class="quide">
+            <p>AREA QUIDE</p>
+        </div>
+        <div class="topbanner"></div>
+    </header>
+    <div id="insideBox">
+        <div class="test">
+            <div><img src="./image/insidecouse.jpg" alt=""></div>
+            <h3>【A】パラレルコース</h3>
+        </div><br>
+    </div>
+    <div id="insideBox2">
+        <div class="test">
+            <div><img src="./image/insidecouse_b.jpg" alt=""></div>
+            <h3>【B】パラレルコース</h3>
+        </div><br>
+    </div>
+    <div id="insideBox3">
+        <div class="test">
+            <div><img src="./image/insidecouse_c.jpg" alt=""></div>
+            <h3>【C】パラレルコース</h3>
+        </div><br>
+    </div>
+    <div id="insideBox4">
+        <div class="test">
+            <div><img src="./image/insidecouse_d.jpg" alt=""></div>
+            <h3>【D】パラレルコース</h3>
+        </div><br>
+    </div>
+    <div id="insideBox5">
+        <div class="test">
+            <div><img src="./image/insidecouse_e.jpg" alt=""></div>
+            <h3>【E】パラレルコース</h3>
+        </div><br>
+    </div>
+    <main>
+
+        <section class="section1">
+            <div class="commonTitle">
+                <div class="commonTitleEn">
+                    <h2>Area Map</h2>
+                </div>
+                <div class="commonTitleJp">
+                    <h4>エリアマップ </h4>
+                </div>
+            </div>
+
+            <div class="courseMapBox">
+
+                <div class="courseMap"><img src="./image/course_map.png" alt="">
+                    <ul class="img_master">
+                        <li id="img_a">
+                            <div class="switch">
+                                <button type="button" name="btn" value="show?" class="showUp">
+                                    <img src="./image/course_map_a.png">
+                                </button>
+                            </div>
+                        </li>
+                        <li id="img_b">
+                            <div class="switch">
+                                <button type="button" name="btn" value="show?" class="showUp">
+                                    <img src="./image/course_map_b.png">
+                                </button>
+                            </div>
+                        </li>
+                        <li id="img_c">
+                            <div class="switch">
+                                <button type="button" name="btn" value="show?" class="showUp">
+                                    <img src="./image/course_map_c.png">
+                                </button>
+                            </div>
+                        </li>
+                        <li id="img_d">
+                            <div class="switch">
+                                <button type="button" name="btn" value="show?" class="showUp">
+                                    <img src="./image/course_map_d.png">
+                                </button>
+                            </div>
+                        </li>
+                        <li id="img_e">
+                            <div class="switch">
+                                <button type="button" name="btn" value="show?" class="showUp">
+                                    <img src="./image/course_map_e.png">
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="forAll">
+                <h3>湯沢中里スノーリゾートはビギナーも上級者もみんなで滑れて楽しい！<br>
+                    だれもが満足できるコースづくり！</h3>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="skiArea">
+                <div class="skiAreaPic"><img src="./image/skiarea pic1.png" alt="" class="wow fadeIn"
+                        data-wow-duration="0.5" data-wow-delay="0s "></div>
+                <div class="forKis">
+                    <p>お子さんと一緒にゆるやかなコースも <br>
+                        滑りに慣れた方には急斜面やロングコースも</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="section3">
+                <div class="commonTitle">
+                    <div class="commonTitleEn">
+                        <h2>Course Quide</h2>
+                    </div>
+                    <div class="commonTitleJp">
+                        <h4>コースをご紹介 </h4>
+                    </div>
+                </div>
+
+                <div class="mainPic">
+                    <div class="topPic">
+                        <div class="topLeft"><img src="./image/couse_a.png" alt=" " class="wow fadeIn"
+                                data-wow-duration="0.5" data-wow-delay="0s ">
+                            <div class="maintitle">
+                                <p>【A】パラレルコース（中級） </p>
+                            </div>
+                            <div class="mainText">
+                                <h4 class="h4">
+                                    <p>全 長：1,370m 距 離：900m 　スノーボード OK </p>
+                                    <p> 斜度MAX：29度 斜度AVE：11度</p>
+                                </h4>
+                                <p> ピラタスへ来たならここを滑らなくっちゃ損！アルプスの雄大な眺めと、周辺の樹氷は一見の価値有り！ロープウエイで一気に標高2,240ｍまで上り、そこからスタートする樹氷コース。ゆったりと滑りながら、雄大な自然を満喫することができます。また標高が非常に高いのでパウダースノウを楽しめます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="topright"><img src="./image/couse_b.png" alt="" class="wow fadeIn"
+                                data-wow-duration="0.5" data-wow-delay="0s ">
+                            <div class="maintitle">
+                                <p> 【B】ファミリーコース（中級） </p>
+                            </div>
+                            <div class="mainText">
+                                <h4 class="h4">
+                                    <p>全 長：1,170m 距離：1,250m 　スノーボード OK </p>
+                                    <p> 斜度MAX：32度 斜度AVE：30度</p>
+                                </h4>
+                                <p> クワットリフトを降りて、白樺コースともみの木コースを結ぶエントランスコー
+                                    ス。斜度が比較的緩いので、初心者のレッスンにおすすめ。
+                                    また、積雪量が増えると不整地斜面に変貌。なかなかのテクニカルコースになり
+                                    ます。 </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="centerPic">
+                        <div class="centerLeft"><img src="./image/couse_c.png" alt="" class="wow fadeIn"
+                                data-wow-duration="0.5" data-wow-delay="0.3s ">
+                            <div class="maintitle">
+                                <p> 【C】第3ロマンスゲレンデ上部（中級） </p>
+                            </div>
+                            <div class="mainText">
+                                <h4 class="h4">
+                                    <p>全 長：500m 距離 1,350ｍ スノーボード OK </p>
+                                    <p> 斜度MAX：18度 斜度AVE：14度</p>
+                                </h4>
+                                <p> ピラタスNO.1の斜度を誇る中上級者向コース。樹氷コースとカモシカコースの分岐点よりスタートするこのコースは、最大斜度33度と滑りごたえのある険しいコースです。スノーマシン完備で滑走できる期間が長くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="centeright"><img src="./image/couse_d.png" alt="" class="wow fadeIn"
+                                data-wow-duration="0.5" data-wow-delay="0.3s ">
+                            <div class="maintitle">
+                                <p> 【D】ジョイフルコース（中級） </p>
+                            </div>
+                            <div class="mainText">
+                                <h4 class="h4">
+                                    <p>全　 長：180m 距離 1,250ｍ スノーボード OK </p>
+                                    <p> 斜度MAX：27度 斜度AVE：22度</p>
+                                </h4>
+                                <p> 樹氷コースとひょうたんコからの一般的なコースです。かもしかコース最後の斜面上部からの蓼科山の眺望は必見！晴天時には北アルプス・穂高連邦、槍ヶ岳までハッキリと見えます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="downPic">
+                        <div class="downLeft "><img src="./image/couse_e.png" alt="" class="wow fadeIn"
+                                data-wow-duration="0.5" data-wow-delay="0.6s ">
+                            <div class="maintitle">
+                                <p> 【E】パノラマコース（中級） </p>
+                            </div>
+                            <div class="mainText">
+                                <h4 class="h4">
+                                    <p>全　 長：1000m 距離 1,300ｍ スノーボード OK </p>
+                                    <p> 斜度MAX：26度 斜度AVE：21度</p>
+                                </h4>
+                                <p> スーパークワットリフト山頂を降りて、右側のルートコースへの入り口。
+                                    最初の斜面を駆け下りた後はゆったりとした緩斜面、スキー・スノーボード初心者の練習には最適な斜面で、ボードのグランドトリックの練習にも最適な場所です。コース正面には木曽駒ヶ岳を中心とした中央アルプスや、木曽御嶽山の眺望が楽しめます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downright"><img src="./image/couse_f.png" alt="" class="wow fadeIn"
+                                data-wow-duration="0.5" data-wow-delay="0.6s ">
+                            <div class="maintitle">
+                                <p> 【F】ジャイアントコース（中級） </p>
+                            </div>
+                            <div class="mainText">
+                                <h4 class="h4">
+                                    <p>全　 長：400m 距離 680ｍ スノーボード OK </p>
+                                    <p> 斜度MAX：18度 斜度AVE：9度度</p>
+                                </h4>
+                                <p> ピラタス有数のテクニカルエリア、コース上部の斜度は約24度となかなかの滑り応え。トップからは南アルプスの眺望が楽しめます。
+                                    またこの斜面は、スキー・スノーボードの各検定にも使用されるバーンです。 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lastdownPic">
+                        <div class="lastdownLeft"><img src="./image/couse_g.png" alt="" class="wow fadeIn"
+                                data-wow-duration="0.5" data-wow-delay="1s ">
+                            <div class="maintitle">
+                                <p> 【I】バンクヤード（中級） </p>
+                            </div>
+                            <div class="mainText">
+                                <h4 class="h4">
+                                    <p>全　 長：760m 距離 1,100ｍ スノーボード OK </p>
+                                    <p> 斜度MAX：15度 斜度AVE：10度</p>
+                                </h4>
+                                <p> ピラタスのメインバーン、程良い斜度はカービングスキーに最適！
+                                    気持ちよくシュプールを描けます。また、クワットリフトから良く見えるので注目度もNo.1のゲレンデです。正面にはセンターハウスと、クワットリフト乗り場途中（下部）より左側へ抜ける通路があり、ロープウエイ乗り場への近道になっています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lastdownright"><img src="./image/couse_h.png" alt="" class="wow fadeIn"
+                                data-wow-duration="0.5" data-wow-delay="1s ">
+                            <div class="maintitle">
+                                <p> 【N】スマイルキッズパーク（中級） </p>
+                            </div>
+                            <div class="mainText">
+                                <h4 class="h4">
+                                    <p>全　 長：300m そり専用エリアとスキー・スノーボードエリアで分かれているので安心 </p>
+                                    <p> 斜度MAX：7度 斜度AVE：6度</p>
+                                </h4>
+                                <p> 周辺コースとは隔離されており、安心してお子様と遊んで頂けます。また、動く歩道でコースが左右に分かれており、そり専用エリアとスキー、スノーボードエリアに分かれていて、初心者用の足馴らしにもスノーウォーカー（動く歩道※有料１日¥500）をご利用頂けます。キッズエリアの入場料は無料です。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="footer">
+            <div class="footerLogo"><img src="./image/logoWhite-08.png" alt=""></div>
+            <div class="footerLeft">
+                <p>
+                    パウダースノーリゾート<br> 025-783-4100 〒949-6423 <br>
+                    新潟県南魚沼市舞子1819-79 <br>
+                    パウダー日帰りスキ</p>
+            </div>
+            <div class="footerCenter">
+                <p>
+                    会社情報 <br>ライブカメラ <br>グリーンパーク山東 <br>プライバシーポリシー</p>
+            </div>
+            <div class="footerRight">
+                <p> 予約状況 <br>イベント一覧 <br>イベントを主催したい方 <br>モーターパーク</p>
+            </div>
+        </div>
+        <div class="footerLast">
+            <span> ご利用規約</span>
+            <span> 運営会社</span>
+            <span> よくあるご質問</span>
+            <span> 安全報告書</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="./js/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/wow.min.js"></script>
+  
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+
+            },
+
+        });
+        wow.init();
+    </script>
+    <Script>
+        var bodyClass = document.body.classList,
+            lastScrollY = 0;
+        window.addEventListener('scroll', function () {
+            var st = this.scrollY;
+            // 判斷是向上捲動，而且捲軸超過 200px
+            if (st < lastScrollY) {
+                bodyClass.remove('hideUp');
+            } else {
+                bodyClass.add('hideUp');
+            }
+            lastScrollY = st;
+        });
+    </Script>
+    <script>
+        var test2A = document.getElementById("insideBox");
+
+        test2A.style.opacity = "0";
+        test2A.style.visibility = "hidden";
+
+
+        function showBox() {
+
+
+            test2A.style.opacity = "1";
+
+            test2A.style.visibility = "visible";
+        };
+        btnsA = document.getElementsByClassName("showUp");
+        btnsA[0].addEventListener("mouseover", showBox, false);
+    </script>
+
+    <script>
+        btns2A = document.getElementsByClassName("showUp");
+        btnsA[0].addEventListener("mouseout", closeBox, false);
+
+        function closeBox() {
+            test2A.style.opacity = "0";
+
+        };
+    </script>
+
+
+
+    <script>
+        var test2B = document.getElementById("insideBox2");
+
+        test2B.style.opacity = "0";
+        test2B.style.visibility = "hidden";
+
+
+        function showBox() {
+
+
+            test2B.style.opacity = "1";
+
+            test2B.style.visibility = "visible";
+        };
+        btnsB = document.getElementsByClassName("showUp");
+        btnsB[1].addEventListener("mouseover", showBox, false);
+    </script>
+
+    <script>
+        btns2B = document.getElementsByClassName("showUp");
+        btnsB[1].addEventListener("mouseout", closeBox, false);
+
+        function closeBox() {
+            test2B.style.opacity = "0";
+
+        };
+    </script>
+
+    <script>
+        var test2C = document.getElementById("insideBox3");
+        test2C.style.visibility = "hidden";
+
+        test2C.style.opacity = "0";
+
+
+        function showBox() {
+            test2C.style.visibility = "visible";
+
+            test2C.style.opacity = "1";
+
+        };
+        btnsC = document.getElementsByClassName("showUp");
+        btnsC[2].addEventListener("mouseover", showBox, false);
+    </script>
+
+    <script>
+        btns2C = document.getElementsByClassName("showUp");
+        btnsC[2].addEventListener("mouseout", closeBox, false);
+
+        function closeBox() {
+            test2C.style.opacity = "0";
+
+        };
+    </script>
+
+
+
+    <script>
+        var test2D = document.getElementById("insideBox4");
+        test2D.style.visibility = "hidden";
+
+        test2D.style.opacity = "0";
+
+
+        function showBox() {
+
+
+            test2D.style.opacity = "1";
+            test2D.style.visibility = "visible";
+
+        };
+        btnsD = document.getElementsByClassName("showUp");
+        btnsD[3].addEventListener("mouseover", showBox, false);
+    </script>
+
+    <script>
+        btns2D = document.getElementsByClassName("showUp");
+        btnsD[3].addEventListener("mouseout", closeBox, false);
+
+        function closeBox() {
+            test2D.style.opacity = "0";
+
+        };
+    </script>
+
+
+    <script>
+        var test2E = document.getElementById("insideBox5");
+        test2E.style.visibility = "hidden";
+
+        test2E.style.opacity = "0";
+
+
+        function showBox() {
+
+            test2E.style.opacity = "1";
+            test2E.style.visibility = "visible";
+
+        };
+        btnsE = document.getElementsByClassName("showUp");
+        btnsE[4].addEventListener("mouseover", showBox, false);
+    </script>
+
+    <script>
+        btns2E = document.getElementsByClassName("showUp");
+        btnsE[4].addEventListener("mouseout", closeBox, false);
+
+        function closeBox() {
+            test2E.style.opacity = "0";
+
+        };
+    </script>
+</body>
+
+</html>

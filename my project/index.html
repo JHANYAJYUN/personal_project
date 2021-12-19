@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>トップページ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheet/animate.min.css">
+    <link rel="stylesheet" href="./stylesheet/slick.css">
+    <link rel="stylesheet" href="./stylesheet/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet/hamburgers.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css'>
+    <link rel="stylesheet" href="./stylesheet/owl.carousel.min.css">
+    <link rel="stylesheet" href="./stylesheet/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./stylesheet/imghover.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/index.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="headerBanner">
+
+            <nav id="navbar">
+                <ul>
+                    <li class="logo"><a href="./index.html"><img src="./image/logoWhite-08.png" alt="">
+                        </a></li>
+                    <li><a href="./Area.html">
+                            <div id="test" class="underline">
+                                <p>ゲレンデ</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./Lift.html">
+                            <div class="underline">
+                                <p>リフト料金</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+                    <li id="hotelBox" onmouseover="switchMenu( this, 'hotelBoxInside', 'MouseOver' )"
+                        onmouseout="hideMenu()"> <a href="#">
+                            <div class="circle">
+                                <p>ホテル</p>
+                            </div>
+                        </a>
+                        <div id="hotelBoxInside">
+                            <ul>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/Navhotel1.jpg" alt="">
+                                        <h5>王子第一ホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel2.jpg" alt="">
+                                        <h5>パウダーホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel3.jpg" alt="">
+                                        <h5>綾会館</h5>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./Dining.html">
+                            <div class="underline">
+                                <p>レストラン</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+
+                    </li>
+                    <li> <a href="./Rental.html">
+                            <div class="underline">
+                                <p>レンタル</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./school.html">
+                            <div class="underline">
+                                <p>スクール</p>
+                            </div>
+                        </a></li>
+                </ul>
+                <div class="suportArea">
+                    <a href="./form.html">
+                        <div class="suport"> <span>お問い合わせ</span></div>
+                    </a>
+                </div>
+            </nav>
+            <div id="hamIcon">
+                <button type="button" name="btn" class="hamburger hamburger--slider" id="hamburgerIcon">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <div class="hamburgerBlack"><img src="./image/hamburger-Circle.svg" alt=""></div>
+
+                </button>
+            </div>
+
+            <div id="ham">
+                <ul>
+                    <a href="./index.html">
+                        <li>
+                            <h2>トップページ</h2>
+                        </li>
+                    </a>
+                    <a href="./Area.html">
+                        <li>
+                            <h2>ゲレンデ</h2>
+                        </li>
+                    </a>
+                    <a href="./Lift.html">
+                        <li>
+                            <h2>リフト料金</h2>
+                        </li>
+                    </a>
+                    <a href="./hotel.html">
+                        <li>
+                            <h2>ホテル</h2>
+                        </li>
+                    </a>
+                    <a href="./Dining.html">
+                        <li>
+                            <h2>レストラン</h2>
+                        </li>
+                    </a>
+                    <a href="./Rental.html">
+                        <li>
+                            <h2>レンタル</h2>
+                        </li>
+                    </a>
+                    <a href="./school.html">
+                        <li>
+                            <h2>スクール</h2>
+                        </li>
+                    </a>
+                    <a href="./form.html">
+                        <li>
+                            <h2>お問い合わせ</h2>
+                        </li>
+                    </a>
+                </ul>
+
+
+            </div>
+            <nav id="navbar2" data-aos="fade-left" data-aos-offset="950" data-aos-duration="800">
+                <ul>
+                    <li class="logo"><a href="./index.html">
+                            <img src="./image/logo_black-08.png" alt=""></a>
+                    </li>
+                    <li><a href="./Area.html">
+                            <div id="test" class="underline">
+                                <p>ゲレンデ</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Lift.html">
+                            <div class="underline">
+                                <p>リフト料金</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+                    <li id="hotelBox2" onmouseover="switchMenu2( this, 'hotelBoxInside2', 'MouseOver' )"
+                        onmouseout="hideMenu2()"> <a href="#">
+                            <div class="circle">
+                                <p>ホテル</p>
+                            </div>
+                        </a>
+                        <div id="hotelBoxInside2">
+                            <ul>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/Navhotel1.jpg" alt="">
+                                        <h5>王子第一ホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel2.jpg" alt="">
+                                        <h5>パウダーホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel3.jpg" alt="">
+                                        <h5>綾会館</h5>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./Dining.html">
+                            <div class="underline">
+                                <p> レストラン</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Rental.html">
+                            <div class="underline">
+                                <p>レンタル</p>
+                            </div>
+                        </a></li>
+
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./school.html">
+                            <div class="underline">
+                                <p> スクール</p>
+                            </div>
+                        </a></li>
+
+                </ul>
+                <div class="suportArea">
+                    <a href="./form.html">
+                        <div class="suport"><span> お問い合わせ</span></div>
+                    </a>
+                </div>
+
+            </nav>
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"
+                data-interval="7000">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item itemA active">
+                        <div class="opacity"> </div>
+                        <div class="carousel-caption">
+                            <div class="line">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1.6s "> Ready
+                            </span>
+                            <span class="secTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1.9s ">
+                                for<br>
+                            </span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="2.2s ">
+                                The
+                            </span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="2.5s ">
+                                best
+                            </span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="2.8s ">
+                                winter</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item itemB" data-ride="carousel" data-interval="7000">
+                        <div class="opacity"> </div>
+                        <div class="carousel-caption">
+                            <div class="line">
+                                <div class="line1"> </div>
+                                <div class="line2"></div>
+                            </div>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1s ">
+                                powder
+                            </span>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1.3s ">
+                                ski<br>
+                            </span>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1.6s "
+                                style="padding-left: 80px;">p</span>
+                            <span class="secTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1.9s">a</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="2.2s ">r</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="2.5s ">a</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="2.8s ">d</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="3.1s ">i</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="3.4s ">s</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="3.7s ">e</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item itemC" data-interval="7000">
+                        <div class="opacity"> </div>
+                        <div class="carousel-caption">
+                            <div class="line">
+                                <div class="line1"> </div>
+                                <div class="line2"></div>
+                            </div>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1s ">
+                                choice
+                            </span>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1.3s ">
+                                every
+                            </span>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="1.6s ">thing<br></span>
+
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="2.2s ">
+                                y</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="2.5s ">o</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="2.8s ">u
+                            </span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="3.1s ">
+                                w</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="3.4s ">a</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="3.7s ">n</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="4s ">t</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item itemD" data-interval="7000">
+                        <div class="opacity"> </div>
+                        <div class="carousel-caption">
+                            <div class="line">
+                                <div class="line1"> </div>
+                                <div class="line2"></div>
+                            </div>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1s ">A</span>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="1.3s ">m</span></span>
+                            <span class="firstTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="1.6s ">a</span>
+                            <span class="secTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="1.9s">z</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="2.2s ">i</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="2.5s ">n</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="2.8s ">g<br></span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="3.1s "
+                                style="padding-left: 6px;">W</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="3.4s ">i</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="3.7s ">n</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s" data-wow-delay="4s ">t</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="4.3s ">e</span>
+                            <span class="ThirdTyping wow fadeIn" data-wow-duration="1.1s"
+                                data-wow-delay="4.3s ">r</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="arrow">
+            <em>Scroll Down</em>
+            <span></span>
+        </div>
+
+    </header>
+    <div id="go_top" class="go_top">
+        <em>Press to Top</em>
+        <span></span>
+    </div>
+    <main>
+
+        <div id="mainFirst">
+            <div class="mainFirstTitle wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                <div class="mainFirstTitleJP">
+                    <h1>News </h1>
+                </div>
+                <div class="mainFirstTitleEn">
+                    <h4>インフォメーション </h4>
+                </div>
+            </div>
+            <div class="mainFirstContent">
+                <div class="mainFirstTitleContent1">
+                    <a href=""> <span class="mainFirstTitleContent_1">2019.09.09</span></a>
+                    <a href=""> <span class="mainFirstTitleContent_2">イベント</span></a>
+                    <a href=""> <span class="mainFirstTitleContent_3">2019-2020 パウダースキー場早割シーズン券9月12日より受付開始！</span></a>
+                </div>
+                <div class="mainFirstTitleContent2">
+                    <a href=""> <span class="mainFirstTitleContent_1">2019.09.16</span></a>
+                    <a href=""> <span class="mainFirstTitleContent_2">情報</span></a>
+                    <a href=""> <span class="mainFirstTitleContent_3">スタッフ募集（求人募集）</span></a>
+                </div>
+                <div class="mainFirstTitleContent3">
+                    <a href=""> <span class="mainFirstTitleContent_1">2019.10.01</span></a>
+                    <a href=""> <span class="mainFirstTitleContent_2">情報</span></a>
+                    <a href=""> <span class="mainFirstTitleContent_3">
+                            2019-20 winter　season スキー場オープン 11月14日（土）</span></a>
+                </div>
+                <div class="mainFirstTitleContent4">
+                    <a href=""> <span class="mainFirstTitleContent_1">2019.10.10</span></a>
+                    <a href=""> <span class="mainFirstTitleContent_2">アナウンス</span></a>
+                    <a href=""> <span class="mainFirstTitleContent_3">羊蹄山高原オートキャンプ場　台風19号接近に伴うクローズのお知らせ</span></a>
+                </div>
+                <div class="linkBtn">
+                    <a href="#">
+                        <div class="view_more">
+                            <h4>view detail</h4>
+                        </div>
+
+                        <div class="circleBrn">
+                            <div class="loadOne">
+                                <div class="circleArrow"></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            <div class="mainSecEvent">
+                <div class="mainSecEventBox">
+                    <div class="iventLeft1">
+                        <a href="#">
+                            <div class="iventLeftPic">
+                                <img src="./image/eventPic1.png" alt=""></div>
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                    </div></a>
+                </div>
+                <div class="mainSecEventBox">
+                    <a href="#">
+                        <div class="iventLeft1"> <img src="./image/eventPic2.png" alt="">
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mainSecEventBox">
+                    <a href="#">
+                        <div class="iventLeft1"><img src="./image/eventPic3.png" alt="">
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mainSecEventBox">
+                    <a href="#">
+                        <div class="iventLeft1"><img src="./image/eventPic4.jpg" alt="">
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mainSecEventBox">
+                    <a href="#">
+                        <div class="iventLeft1"><img src="./image/eventPic5.jpg" alt="">
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mainSecEventBox">
+                    <a href="#">
+                        <div class="iventLeft1"><img src="./image/eventPic6.jpg" alt="">
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mainSecEventBox">
+                    <a href="#">
+                        <div class="iventLeft1"><img src="./image/eventPic7.jpg" alt="">
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mainSecEventBox">
+                    <a href="#">
+                        <div class="iventLeft1"><img src="./image/eventPic8.jpg" alt="">
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mainSecEventBox">
+                    <a href="#">
+                        <div class="iventLeft1"><img src="./image/eventPic9.jpg" alt="">
+                            <div class="iventRight1">
+                                <h5>2019.08.29</h5>
+                                <h6>毎月第3日曜日はキッズ大歓迎の「スキーこどもの日」小学生はリフト1日券がなんと無料!の大盤振る舞い!
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mainThirdTop"></div>
+        <div id="mainThird">
+            <div class="mainThirdTitle">
+                <div class="mainThirdTitleJP wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <h1>Rental&School </h1>
+                </div>
+                <div class="mainThirdTitleEn wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <h4> レンタル＆スクール</h4>
+                </div>
+            </div>
+            <div class="mainThirdContent">
+                <div class="info2">
+                    <div class="infoPic2">
+                        <img src="./image/rentalBanner3.png" alt=""></div>
+                    <div class="infoText2">
+                        <!-- data-stellar-ratio="1.4" -->
+                        <div class="infoTextTitle">
+                            <h4>もっと雪山が好きになるよう、精一杯サポートさせて頂きます。</h4>
+                            <div class="linkBtn">
+                                <a href="./school.html">
+                                    <div class="view_more">
+                                        <h4>view detail</h4>
+                                    </div>
+
+                                    <div class="circleBrn">
+                                        <div class="loadOne">
+                                            <div class="circleArrow"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info1">
+                    <div class="infoPic1">
+                        <img src="./image/rentalBanner4.png" alt=""></div>
+                    <div class="infoText1">
+                        <div class="infoTextTitle">
+                            <h4>レンタルの常識を打ち破る！！<br>世界シェア70％以上のブランドが揃う</h4>
+                            <div class="linkBtn">
+                                <a href="./Rental.html">
+                                    <div class="view_more">
+                                        <h4>view detail</h4>
+                                    </div>
+
+                                    <div class="circleBrn">
+                                        <div class="loadOne">
+                                            <div class="circleArrow"></div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#">
+            <div class="mainFour backgroundBanner2">
+                <div class="mainFourText">
+                    <h2>スキーコンテスト申請開始</h2>
+                </div>
+                <div class="mainFourTextDate">
+                    <h5>2019-2020<br> winter contest booking</h5>
+                </div>
+
+                <div class="mainFourTextUnderLine"></div>
+                <a href="#">
+                    <div class="mainFourTextArrow"></div>
+                </a>
+
+                <div class="trophy"><img src="./image/trophy.png" alt=""></div>
+            </div>
+        </a>
+        <div id="mainEightBox">
+            <div class="mainEight">
+                <h2>感動満喫の時間<br>スキーシーズンは、最高のドラマだ！
+                </h2>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="break"></div>
+        <div class="break"></div>
+        <div id="mainSixBox">
+            <div class="mainSixTitle">
+                <div class="mainSixTitleJP wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <h1>Event</h1>
+                </div>
+                <div class="mainSixTitleEn wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <h4>イベント特集</h4>
+                </div>
+            </div>
+            <div class="mainSix">
+                <div class="left5">
+                    <div class="specialPic wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s ">
+
+
+                        <figure class="imghvr-border-reveal-top-left">
+                            <img src="./image/特集圖2.png" alt="">
+                            <figcaption>
+
+                                <div class="specialPicText">
+                                    <h4>お迎えと交通手段をご案内</h4>
+                                    <div class="textPhoto"> <img src="./image/more_on_icon.png" alt=""></div>
+                                </div>
+                            </figcaption>
+                            <a href="javascript:;"></a>
+                        </figure>
+
+
+
+
+
+                    </div>
+                    <div class="specialPicWord wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                        <h5>お支払いには現金、クレジットカード、交通系ICなど各種電子マネーもご利用頂けます。</h5>
+                        <div class="linkBtn">
+                            <a href="#">
+                                <div class="view_more">
+                                    <h4>view detail</h4>
+                                </div>
+
+                                <div class="circleBrn">
+                                    <div class="loadOne">
+                                        <div class="circleArrow"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="center5">
+                    <div class="specialPic  wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s ">
+
+                        <figure class="imghvr-border-reveal-top-left">
+                            <img src="./image/特集圖3.png" alt="">
+                            <figcaption>
+
+                                <div class="specialPicText">
+                                    <h4>2019-2020スノーボード<br>大会開催</h4>
+                                    <div class="textPhoto"> <img src="./image/more_on_icon.png" alt=""></div>
+                                </div>
+                            </figcaption>
+                            <a href="javascript:;"></a>
+                        </figure>
+
+
+                    </div>
+                    <div class="specialPicWord  wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s ">
+                        <h5>舞子スノースクールのインストラクターは経験豊富で大会実績もある現役バリバリの
+                            スキーやスノーボードを愛する仲間たちです。</h5>
+                        <div class="linkBtn">
+                            <a href="#">
+                                <div class="view_more">
+                                    <h4>view detail</h4>
+                                </div>
+                                <div class="circleBrn">
+                                    <div class="loadOne">
+                                        <div class="circleArrow"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right5  ">
+                    <div class="specialPic wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s ">
+
+                        <figure class="imghvr-border-reveal-top-left">
+                            <img src="./image/特集圖1.png" alt="">
+                            <figcaption>
+                                <div class="specialPicText">
+                                    <h4>ファミリースキーガイド</h4>
+                                    <div class="textPhoto"> <img src="./image/more_on_icon.png" alt=""></div>
+                                </div>
+                            </figcaption>
+                            <a href="javascript:;"></a>
+                        </figure>
+                    </div>
+                    <div class="specialPicWord " data-wow-duration="1s" data-wow-delay="1s ">
+                        <h5>ていねいに楽しくみなさんと一緒に楽しみながらレベルアップのお手伝いをさせていただきます。</h5>
+                        <div class="linkBtn">
+                            <a href="#">
+                                <div class="view_more">
+                                    <h4>view detail</h4>
+                                </div>
+                                <div class="circleBrn">
+                                    <div class="loadOne">
+                                        <div class="circleArrow"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearFloat"></div>
+        <div id="mainSeven">
+            <div class="mainSevenTitle">
+                <div class="mainSevenTitleJP wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <h1>Access</h1>
+                </div>
+                <div class="mainSevenTitleEn wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <h4>アクセス</h4>
+                </div>
+            </div>
+            <div class="mainSevenBox">
+                <div class="access accessMap">
+                    <div class="accessLogo"> <img src="./image/icon_map.png" alt=""></div>
+                    <h5>パウダーリゾート</h5>
+                    <div class="accessText"> <span>025-787-3301<br>
+                            〒949-6103<br>
+                            新潟県南魚沼郡湯沢町土樽5044-1</span></div>
+                </div>
+                <div class="access accessTrain01">
+                    <div class="accessLogo"><img src="./image/icon_train.png" alt=""></div>
+                    <h5>北海道新幹線で・・・</h5>
+                    <div class="accessText"> <span>東京駅］から上越新幹線で<br>
+                            約70分で［越後湯沢駅］へ<br>
+                            そこから無料シャトルバスでGO！！</span></div>
+                </div>
+                <div class="access accessTrain02">
+                    <div class="accessLogo"><img src="./image/icon_train02.png" alt=""></div>
+                    <h5>電車で・・・</h5>
+                    <div class="accessText"> <span>越後湯沢駅］から約10分で<br>
+                            スキー場直結の［越後中里駅］へ<br>
+                            着いたらゲレンデ！</span></div>
+                </div>
+                <div class="access accessCar">
+                    <div class="accessLogo"><img src="./image/icon_car.png" alt=""></div>
+                    <h5>お車で・・・</h5>
+                    <div class="accessText"> <span>湯沢I.C.から約5km<br>
+                            約10分で到着！</span></div>
+                </div>
+            </div>
+        </div>
+        <div id=mainMovieBox>
+            <div id="mainMovie">
+                <div id=full-text>
+                    <div class="full-textContent">
+                        <div class="movieLogo"><img src="./image/logoWhite-08.png" alt=""></div>
+                        <div class="movieWord">
+                            <h2>感動満喫の時間<br>スキーシーズンは、最高のドラマだ！
+                            </h2>
+                            <p> 記念日のお祝いやハレの日の家族の食事、
+                                コドモもオトナも楽しめるイベントなど、
+                                ご家族で紡ぐものがたりの
+                                1ページになればと考えています</p>
+                        </div>
+                    </div>
+                </div>
+                <video id="video_bg" preload="auto" loop="loop" autoplay="true" muted="muted">
+                    <source src="./image/GoPro.mp4" type="video/mp4" ;>
+                </video>
+            </div>
+        </div>
+        <div id="mainNightBox">
+            <div id="mainNight">
+                <div id="mainNightTitle">
+                    <div class="mainNightTitleJP">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="mainNightTitleEn">
+                        <h4>お問い合わせ</h4>
+                    </div>
+                </div>
+                <div id="contactMail" class="start">
+                </div>
+                <div class="linkBtn">
+                    <a href="./form.html">
+                        <div class="view_more">
+                            <h4>view detail</h4>
+                        </div>
+                        <div class="circleBrn">
+                            <div class="loadOne">
+                                <div class="circleArrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div id="eleven">
+            <div class="satic-area">
+
+                </header>
+                <div class="dynamic-area1"></div>
+                <div class="dynamic-area2"></div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerLogo"><img src="./image/logoWhite-08.png" alt=""></div>
+            <div class="footerLeft">
+                <p>
+                    パウダースノーリゾート<br> 025-783-4100 〒949-6423 <br>
+                    新潟県南魚沼市舞子1819-79 <br>
+                    パウダー日帰りスキ</p>
+            </div>
+            <div class="footerCenter">
+                <span>
+                    会社情報</span> <br><span>ライブカメラ</span> <br><span>グリーンパーク山東</span> <br><span>プライバシーポリシーシー</span>
+            </div>
+            <div class="footerRight">
+                <span>予約状況</span> <br><span>イベント一覧</span> <br><span>イベントを主催したい方</span> <br><span>モーターパーク</span>
+            </div>
+        </div>
+        <div class="footerLast">
+            <span> ご利用規約</span>
+            <span> 運営会社</span>
+            <span> よくあるご質問</span>
+            <span> 安全報告書</span>
+        </div>
+
+    </footer>
+
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/highlight.js"></script>
+    <script src="./js/lory.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+
+  
+    <Script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scrollTop2 = $(window).scrollTop();
+                var mainTop2 = $(".mainFour").offset().top;
+
+                if (scrollTop2 > mainTop2) {
+                    $(".mainEight").addClass("backgroundBanner3");
+
+                }
+            })
+        });
+   
+        $('.arrow').click(function () {
+            $('html,body').animate({
+                scrollTop: 900
+            }, 500);
+            return false
+        });
+
+
+        $(function () {
+
+            $("#go_top").on("click", function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 750);
+            });
+
+        });
+
+
+        function openMail() {
+            mail = document.getElementById("contactMail");
+            if (mail.classList.contains("start")) {
+                mail.classList.remove("start");
+            } else {
+                mail.classList.add("start");
+            }
+        }
+
+        function stopMail() {
+            leaveMail = document.getElementById("contactMail");
+
+            if (leaveMail.classList.contains("start")) {
+                leaveMail.classList.remove("start");
+            } else {
+                leaveMail.classList.add("start");
+            }
+        }
+
+        function init() {
+            slideHam = document.getElementsByClassName("hamburger");
+            slideHam[0].addEventListener("click", slideToLeft, false);
+            closeHam = document.getElementById("InsideHamburger");
+            startAnimate = document.getElementById("mainNightTitle");
+            startAnimate.addEventListener("mouseover", openMail, false);
+            stopAnimate = document.getElementById("mainNightTitle");
+            stopAnimate.addEventListener("mouseout", stopMail, false);
+        }
+        window.onload = init;
+    </Script>
+
+    <Script>
+   
+      
+    </Script>
+    <script>
+        $('.mainSecEvent').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                    }
+                },
+            ]
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./js/wow.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+            animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+            offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+            mobile: true, // 手機上是否要套用動畫 (預設是true)
+            live: true, // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+            },
+
+        });
+        wow.init();
+    </script>
+</body>
+</html>

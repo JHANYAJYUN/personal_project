@@ -1,0 +1,1106 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  content: '';
+}
+
+main {
+  padding-bottom: 150px;
+}
+
+.topbanner {
+  display: none;
+  background: url("../image/img/mv_bg_2017_02.jpg") center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+body::after {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cd-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.box {
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+
+}
+
+
+.cd-item {
+  position: relative;
+  width: 31%;
+  margin: 1%;
+}
+
+
+
+.cd-item.empty-box::after {
+  /* box visible as placeholder when the .cd-quick-view zooms in */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #392c3f;
+}
+
+.box:before,
+.box:after {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  bottom: 10%;
+  right: 7%;
+  z-index: 1;
+  transform: scale(0, 1);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.box:after {
+  top: 10.8%;
+  bottom: 10.8%;
+  transform: scale(1, 0);
+
+}
+
+.box:hover:before,
+.box:hover:after {
+  transform: scale(1);
+  animation: animate 1.5s;
+}
+
+.box:hover:before {
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.box:hover:after {
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.box:hover img {
+  transform: scale(1.2);
+  filter: blur(5px);
+  -moz-filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+}
+
+.box .box-content {
+  padding: 30px 10px;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  bottom: 10%;
+  right: 7%;
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.box:hover .box-content {
+  pointer-events: none;
+  box-shadow: 0 0 0 35px rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.box:hover .hotelPicText {
+  display: none;
+}
+
+.box .title {
+
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin: 20px 0;
+}
+
+.box .post {
+  display: block;
+  margin: 20px 0;
+  font-size: 16px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.box .description {
+  font-size: 14px;
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+
+.hotelPicText {
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 5px 0;
+  padding: 20px 0;
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+  text-shadow: 1px 1px 1px black;
+}
+
+.hotelPicText h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 20px 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-shadow: 1px 1px 1px black;
+}
+
+
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-hover {
+  0% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+
+.cd-item img {
+  display: block;
+  width: 100%;
+}
+
+
+.cd-trigger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s, background-color 0.2s;
+  -moz-transition: opacity 0.2s, background-color 0.2s;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.no-touch .cd-trigger:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.cd-quick-view {
+  /* quick view non available on small devices */
+  display: none;
+}
+
+
+
+.cd-slider-wrapper {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.cd-slider-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-slider {
+  width: 100%;
+  float: left;
+}
+
+.cd-slider li {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cd-slider li img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cd-slider li.selected {
+  position: relative;
+  z-index: 3;
+}
+
+.add-content .cd-slider {
+  margin-right: 3em;
+}
+
+.cd-slider-navigation {
+  opacity: 0;
+}
+
+.add-content .cd-slider-navigation {
+  opacity: 1;
+}
+
+.cd-slider-navigation li {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.cd-slider-navigation li:first-child {
+  left: 0;
+}
+
+.cd-slider-navigation li:last-child {
+  /* equal to the .cd-slider-wrapper margin-right */
+  right: 3em;
+}
+
+.cd-slider-navigation li a {
+  display: block;
+  width: 40px;
+  height: 50px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.2s, background 0.2s;
+  -moz-transition: opacity 0.2s, background 0.2s;
+  transition: opacity 0.2s, background 0.2s;
+}
+
+.cd-slider-navigation li a::before,
+.cd-slider-navigation li a::after {
+  /* create arrows in CSS */
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  display: inline-block;
+  background: #ffffff;
+  height: 3px;
+  width: 12px;
+}
+
+.cd-slider-navigation li a::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cd-slider-navigation li a::after {
+  -webkit-transform: translateY(7px) rotate(-45deg);
+  -moz-transform: translateY(7px) rotate(-45deg);
+  -ms-transform: translateY(7px) rotate(-45deg);
+  -o-transform: translateY(7px) rotate(-45deg);
+  transform: translateY(7px) rotate(-45deg);
+}
+
+.add-content .cd-slider-navigation li a {
+  opacity: .2;
+}
+
+.no-touch .cd-slider-navigation li a:hover {
+  background: rgba(71, 55, 78, 0.8);
+  opacity: 1;
+}
+
+.touch .cd-slider-navigation li a {
+  opacity: 1;
+}
+
+.cd-slider-navigation li:first-child a::before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.cd-slider-navigation li:first-child a::after {
+  -webkit-transform: translateY(7px) rotate(45deg);
+  -moz-transform: translateY(7px) rotate(45deg);
+  -ms-transform: translateY(7px) rotate(45deg);
+  -o-transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
+}
+
+.cd-item-info {
+  position: absolute;
+  padding: 3em 3em 3em 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s, visibility 0s;
+  -moz-transition: opacity .3s, visibility 0s;
+  transition: opacity .3s, visibility 0s;
+}
+
+.cd-item-info h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
+.cd-item-info p {
+  line-height: 1.6;
+  margin: 1em 0;
+  color: #67919c;
+}
+
+.cd-item-info .cd-item-action li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.cd-item-info .cd-item-action li:first-child {
+  margin-left: -4px;
+}
+
+.add-content .cd-item-info {
+  /* class added at the end of the width animation, used to show the content */
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+
+.add-content .cd-item-info h2 {
+  color: black;
+  -webkit-animation: cd-slide-in 0.3s;
+  -moz-animation: cd-slide-in 0.3s;
+  animation: cd-slide-in 0.3s;
+}
+
+.add-content .cd-item-info p {
+  color: black;
+  -webkit-animation: cd-slide-in 0.4s;
+  -moz-animation: cd-slide-in 0.4s;
+  animation: cd-slide-in 0.4s;
+}
+
+.add-content .cd-item-info .cd-item-action {
+
+  -webkit-animation: cd-slide-in 0.5s;
+  -moz-animation: cd-slide-in 0.5s;
+  animation: cd-slide-in 0.5s;
+}
+
+.add-content .cd-item-info .cd-item-action a {
+  color: black;
+}
+
+@-webkit-keyframes cd-slide-in {
+  0% {
+    -webkit-transform: translate3d(-40px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-moz-keyframes cd-slide-in {
+  0% {
+    -moz-transform: translate3d(-40px, 0, 0);
+  }
+
+  100% {
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes cd-slide-in {
+  0% {
+    -webkit-transform: translate3d(-40px, 0, 0);
+    -moz-transform: translate3d(-40px, 0, 0);
+    -ms-transform: translate3d(-40px, 0, 0);
+    -o-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.cd-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform .3s 0s, visibility 0s .3s;
+  -moz-transition: -moz-transform .3s 0s, visibility 0s .3s;
+  transition: transform .3s 0s, visibility 0s .3s;
+}
+
+.cd-close::before,
+.cd-close::after {
+  /* close icon in css */
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  display: inline-block;
+  height: 4px;
+  width: 20px;
+  background: #47374e;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cd-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cd-close::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.no-touch .cd-close:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.add-content .cd-close {
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform .3s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .3s 0s, visibility 0s 0s;
+  transition: transform .3s 0s, visibility 0s 0s;
+}
+
+
+#modal {
+  background-color: white;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  transition: all 1s;
+}
+
+#modal ul {
+  display: flex;
+}
+
+#modal ul li {
+  text-align: center;
+  list-style: none;
+  width: 33.33%;
+  line-height: 30px;
+
+}
+
+#modal ul li h4 {
+  font-weight: 500;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+
+}
+
+.tablink:hover {
+  cursor: pointer;
+}
+
+#modal .card {
+  position: relative;
+  width: 100%;
+}
+
+#modal .card img {
+  width: 80%;
+}
+
+#modal .card p {
+  padding-top: 30px;
+}
+
+.cross {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  top: 0;
+}
+
+.cross:hover {
+  cursor: pointer;
+}
+
+.selected h4 {
+  background-color: rgba(4, 151, 195);
+  color: #fff;
+}
+
+.cross:hover .line1 {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.cross:hover .line2 {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.cross .line1,
+.cross .line2 {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width: 40px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition-duration: 0.5s;
+}
+
+.cross .line1 {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.cross .line2 {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+#outBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* 預設：完全透明；設定 z-index: -1 會在整個頁面的後方，看不到，才不會擋到頁面元素。 */
+  z-index: 0;
+  transition: all 0.3s;
+  visibility: hidden;
+
+}
+
+@media only screen and (min-width: 1024px) {
+  body.overlay-layer::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+  }
+
+  #modal {
+    display: none;
+
+  }
+
+  .cd-quick-view {
+    display: block;
+    position: fixed;
+    max-width: 900px;
+    visibility: hidden;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: left, top, width;
+    z-index: 1;
+  }
+
+  .cd-quick-view:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .cd-quick-view.is-visible {
+    /* class added when user clicks on .cd-trigger */
+    visibility: visible;
+  }
+
+  .cd-quick-view.animate-width {
+    /* class added at the end of the first zoom-in animation */
+    background-color: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-trigger {
+    /* always visible on small devices */
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-trigger {
+    /* only visible on hover on big devices */
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .no-touch .cd-item:hover .cd-trigger {
+    opacity: 1;
+  }
+
+  .touch .cd-item .cd-trigger {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+  .cd-item {
+    position: relative;
+    width: 40%;
+    margin: 5%;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .cd-item {
+    position: relative;
+    width: 44%;
+    margin: 3%;
+  }
+
+  #modal {
+    width: 70%;
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    transition: all 1s;
+  }
+
+  .hotelPicText h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 20px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  #modal .card h3 {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+
+  #modal .card p {
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #modal .card img {
+    width: 90%;
+  }
+
+
+
+  .cross {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+  }
+
+  #modal ul li h4 {
+    font-weight: 500;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+
+  }
+
+  .cross:hover .line1 {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+  .cross:hover .line2 {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+
+  .cross .line1,
+  .cross .line2 {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition-duration: 0.5s;
+  }
+
+  .cross .line1 {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+
+  .cross .line2 {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+ 
+
+  .cd-item {
+    position: relative;
+    width: 45%;
+    margin: 2%;
+  }
+
+  #modal {
+    width: 85%;
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    transition: all 1s;
+  }
+
+  .hotelPicText h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 20px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .box .title {
+
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin: 5px 0;
+  }
+
+  .box .post {
+    display: block;
+    margin: 10px 0;
+    font-size: 10px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  #modal .card h3 {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+
+  #modal .card p {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #modal .card img {
+    width: 90%;
+  }
+
+
+
+  .cross {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+  }
+
+  #modal ul li h4 {
+    font-weight: 500;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+
+  }
+
+  .cross:hover .line1 {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+  .cross:hover .line2 {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+
+  .cross .line1,
+  .cross .line2 {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition-duration: 0.5s;
+  }
+
+  .cross .line1 {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+
+  .cross .line2 {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+
+}
+
+@media screen and (max-width: 499px) {
+  #hotelSectionFir {
+    display: none;
+  }
+
+  .topbanner {
+    display: block;
+    background: url("../image/img/mv_bg_2017_02.jpg") center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .cd-item {
+    position: relative;
+    width: 90%;
+    margin: 5%;
+  }
+
+  #modal {
+    width: 300px;
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    transition: all 1s;
+  }
+
+
+  .box .title {
+
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 10px 0;
+  }
+
+  .box .post {
+    display: block;
+    margin: 15px 0;
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  #modal .card h3 {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+
+  #modal .card p {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+  #modal .card img {
+    width: 85%;
+  }
+
+
+
+  .cross {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+  }
+
+  #modal ul li h4 {
+    font-weight: 500;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+
+  }
+
+  .cross:hover .line1 {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+  .cross:hover .line2 {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+
+  .cross .line1,
+  .cross .line2 {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition-duration: 0.5s;
+  }
+
+  .cross .line1 {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+
+  .cross .line2 {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+  .tablink:hover {
+    cursor: pointer;
+  }
+
+
+}

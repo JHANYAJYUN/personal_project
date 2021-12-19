@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>お問い合わせ</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="./stylesheet/hamburgers.css">
+  <link rel="stylesheet" href="./stylesheet/animate.min.css">
+  <link rel="stylesheet" href="./stylesheet/Common.css">
+  <link rel="stylesheet" href="./stylesheet/form.css">
+</head>
+
+<body>
+  <header>
+
+    <div class="headerBanner">
+
+      <div class="bannerTitle">
+        <h1>お問い合わせ</h1>
+      </div>
+    </div>
+    <div id="headerBanner">
+      <nav id="navbar2">
+        <ul>
+          <li class="logo"><a href="./index.html">
+              <img src="./image/logo_black-08.png" alt=""></a>
+          </li>
+          <li><a href="./Area.html">
+              <div class="underline">
+                <p>ゲレンデ</p>
+              </div>
+            </a></li>
+          <li class="bline">
+          </li>
+
+          <li> <a href="./Lift.html">
+              <div class="underline">
+                <p>リフト料金</p>
+              </div>
+            </a></li>
+          <li class="bline">
+          </li>
+          <li id="hotelBox2" onmouseover="switchMenu2( this, 'hotelBoxInside2', 'MouseOver' )" onmouseout="hideMenu2()">
+            <a href="#">
+              <div class="circle">
+                <p>ホテル</p>
+              </div>
+            </a>
+            <div id="hotelBoxInside2">
+              <ul>
+                <a href="./hotel.html">
+                  <li><img src="./image/Navhotel1.jpg" alt="">
+                    <h5>王子第一ホテル</h5>
+                  </li>
+                </a>
+                <a href="./hotel.html">
+                  <li><img src="./image/navhotel2.jpg" alt="">
+                    <h5>パウダーホテル</h5>
+                  </li>
+                </a>
+                <a href="./hotel.html">
+                  <li><img src="./image/navhotel3.jpg" alt="">
+                    <h5>綾会館</h5>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </li>
+          <li class="bline">
+          </li>
+          <li> <a href="./Dining.html">
+              <div class="underline">
+                <p> レストラン</p>
+              </div>
+            </a></li>
+          <li class="bline">
+          </li>
+
+          <li> <a href="./Rental.html">
+              <div class="underline">
+                <p>レンタル</p>
+              </div>
+            </a></li>
+
+          <li class="bline">
+          </li>
+          <li> <a href="./school.html">
+              <div class="underline">
+                <p> スクール</p>
+              </div>
+            </a></li>
+
+        </ul>
+      </nav>
+
+
+      <div id="ham">
+        <ul>
+          <a href="./index.html">
+            <li>
+              <h2>トップページ</h2>
+            </li>
+          </a><br>
+          <a href="./Area.html">
+            <li>
+              <h2> ゲレンデ</h2>
+            </li>
+          </a><br>
+          <a href="./Lift.html">
+            <li>
+              <h2>リフト料金</h2>
+            </li>
+          </a><br>
+          <a href="./hotel.html">
+            <li>
+              <h2>ホテル</h2>
+            </li>
+          </a><br>
+          <a href="./Dining.html">
+            <li>
+              <h2>レストラン</h2>
+            </li>
+          </a><br>
+          <a href="./Rental.html">
+            <li>
+              <h2>レンタル</h2>
+            </li>
+          </a><br>
+          <a href="./school.html">
+            <li>
+              <h2>スクール</h2>
+            </li>
+          </a><br>
+          <a href="./form.html">
+            <li>
+              <h2>お問い合わせ<h2>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div id="hamIcon">
+        <button type="button" name="btn" class="hamburger hamburger--slider" id="hamburgerIcon">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          <div class="hamburgerBlack"><img src="./image/hamburger-Circle.svg" alt=""></div>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <div id="theFormBody">
+      <div class="formTopText">
+        <h4> 必要事項をご入力の上、確認ボタンを押してください。<br>
+          内容を確認し、担当よりご連絡させていただきます。<br>
+          <span>※</span>は入力必須項目です。
+
+        </h4>
+      </div>
+      <form>
+        <div class="container form-row">
+          <div class="col-xl-12 col-12 form-group row">
+            <label for="validationDefault01" class="col-xl-4 col-md-12"> <span>*</span>お名前</label>
+            <input type="text" class="form-control col-xl-6 col-md-12" id="validationDefault01" placeholder="山田太郎"
+              value="" required>
+          </div>
+          <div class="col-xl-12  form-group row">
+            <label for="validationDefault02" class="col-xl-4 col-md-12"> <span>*</span>フリガナ</label>
+            <input type="text" class="form-control col-xl-6 col-md-12" id="validationDefault02"
+              placeholder="YAMADA　TARO" value="" required>
+          </div>
+
+          <div class="col-xl-12  form-group row ">
+            　<label for="validationDefault03" class="col-xl-4 col-md-12 area"> 地域</label>
+
+            <select class="custom-select col-xl-6 col-md-12" id="inputGroupSelect03">
+              <option selected>Choose...</option>
+              <option value="1">東京区</option>
+              <option value="2">大阪府</option>
+              <option value="3">北海道</option>
+              <option value="1">京都府</option>
+              <option value="2">福岡県</option>
+              <option value="3">長野県</option>
+            </select>
+
+          </div>
+          <div class="col-xl-12  form-group row">
+            <label for="validationDefault03" class="col-xl-4 col-md-12">郵便番号</label>
+            <input type="text" class="form-control col-xl-6 col-md-12" id="validationDefault03" placeholder="001-11"
+              required>
+          </div>
+          <div class="col-xl-12  form-group row">
+            <label for="validationDefault04" class="col-xl-4 col-md-12"> <span>*</span>ご住所</label>
+            <input type="text" class="form-control col-xl-8 col-md-12" id="validationDefault04" placeholder="三区1-1-1"
+              required>
+          </div>
+          <div class="col-xl-12  form-group row">
+            <label for="validationDefault05" class="col-xl-4 col-md-12"> <span>*</span>連絡先電話番号</label>
+            <input type="text" class="form-control col-xl-6 col-md-12" id="validationDefault05" placeholder="090-123456"
+              required>
+          </div>
+          <div class="col-xl-12  form-group row">
+            <label for="validationDefault05" class="col-xl-4 col-md-12"> <span>*</span>メールアドレス</label>
+            <input type="text" class="form-control col-xl-6 col-md-12" id="validationDefault05"
+              placeholder="popo1234@gmail.com" required>
+          </div>
+          <div class="col-xl-12  form-group row">
+            <label for="validationDefault05" class="col-xl-4 col-md-12">件名</label>
+            <input type="text" class="form-control col-xl-6 col-md-12" id="validationDefault05" placeholder="件名"
+              required>
+          </div>
+
+          <div class="form-group row col-xl-12 ">
+            <label class="form-check-label col-xl-4 col-md-12" for="invalidCheck2"> <span>*</span>お問い合わせ内容 </label>
+            <textarea class="form-control col-xl-6 col-md-12" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          </div>
+
+
+          <div class="col-xl-12 mb-1 form-group  row">
+            <label for="validationDefault05" class="col-xl-4 col-md-2 col-3">同意事項</label>
+            <div class="form-check">
+              <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
+              </label>
+            </div>
+            <div class="notify" class="col-xl-8 col-md-8 col-12"></div>
+            <span>プライバシーポリシーはこちらプライバシーポリシーに同意</span>
+          </div>
+        </div>
+      </form>
+
+      <div class="form-group col-xl-12 col-md-12 row button">
+        　　 <label class=" col-xl-5 col-md-4  col-3"></label>
+        <button type="submit" class="btn btn-secondary">
+          <h6>送信内容の確認</h6>
+        </button>
+      </div>
+
+    </div>
+
+  </main>
+  <footer>
+
+    <div class="footer">
+      <div class="footerLogo"><img src="./image/logoWhite-08.png" alt=""></div>
+      <div class="footerLeft">
+        <p>
+          パウダースノーリゾート<br> 025-783-4100 〒949-6423 <br>
+          新潟県南魚沼市舞子1819-79 <br>
+          パウダー日帰りスキ</p>
+      </div>
+      <div class="footerCenter">
+        <p>
+          会社情報 <br>ライブカメラ <br>グリーンパーク山東 <br>プライバシーポリシー</p>
+      </div>
+      <div class="footerRight">
+        <p> 予約状況 <br>イベント一覧 <br>イベントを主催したい方 <br>モーターパーク</p>
+      </div>
+    </div>
+    <div class="footerLast">
+      <span> ご利用規約</span>
+      <span> 運営会社</span>
+      <span> よくあるご質問</span>
+      <span> 安全報告書</span>
+    </div>
+  </footer>
+
+
+
+
+  <script src="./js/jquery-2.0.2.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+  <script src="./js/common.js"></script>
+
+  <Script>
+    var bodyClass = document.body.classList,
+      lastScrollY = 0;
+    window.addEventListener('scroll', function () {
+      var st = this.scrollY;
+      // 判斷是向上捲動，而且捲軸超過 200px
+      if (st < lastScrollY) {
+        bodyClass.remove('hideUp');
+      } else {
+        bodyClass.add('hideUp');
+      }
+      lastScrollY = st;
+    });
+  </Script>
+
+</body>
+
+</html>

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>スクール情報</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheet/hamburgers.css">
+    <link rel="stylesheet" href="./stylesheet/hamburgers.css">
+    <link rel="stylesheet" href="./stylesheet/animate.min.css">
+    <link rel="stylesheet" href="./stylesheet/Common.css">
+    <link rel="stylesheet" href="./stylesheet/school.css">
+</head>
+
+<body>
+    <header>
+        <div class="suportArea">
+            <a href="./form.html">
+                <div class="suport"><span> お問い合わせ</span></div>
+            </a>
+        </div>
+        <div id="headerBanner">
+            <nav id="navbar2">
+                <ul>
+                    <li class="logo"><a href="./index.html">
+                            <img src="./image/logo_black-08.png" alt=""></a>
+                    </li>
+                    <li><a href="./Area.html">
+                            <div class="underline">
+                                <p>ゲレンデ</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Lift.html">
+                            <div class="underline">
+                                <p>リフト料金</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+                    <li id="hotelBox2" onmouseover="switchMenu2( this, 'hotelBoxInside2', 'MouseOver' )"
+                        onmouseout="hideMenu2()"> <a href="#">
+                            <div class="circle">
+                                <p>ホテル</p>
+                            </div>
+                        </a>
+                        <div id="hotelBoxInside2">
+                            <ul>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/Navhotel1.jpg" alt="">
+                                        <h5>王子第一ホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel2.jpg" alt="">
+                                        <h5>パウダーホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel3.jpg" alt="">
+                                        <h5>綾会館</h5>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./Dining.html">
+                            <div class="underline">
+                                <p> レストラン</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Rental.html">
+                            <div class="underline">
+                                <p>レンタル</p>
+                            </div>
+                        </a></li>
+
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./school.html">
+                            <div class="underline">
+                                <p style="color: rgba(182, 155, 0, 0.9); font-weight: 700;"> スクール</p>
+                            </div>
+                        </a></li>
+
+                </ul>
+            </nav>
+
+
+            <div id="ham">
+                <ul>
+                    <a href="./index.html">
+                        <li>
+                            <h2>トップページ</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Area.html">
+                        <li>
+                            <h2> ゲレンデ</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Lift.html">
+                        <li>
+                            <h2>リフト料金</h2>
+                        </li>
+                    </a><br>
+                    <a href="./hotel.html">
+                        <li>
+                            <h2>ホテル</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Dining.html">
+                        <li>
+                            <h2>レストラン</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Rental.html">
+                        <li>
+                            <h2>レンタル</h2>
+                        </li>
+                    </a><br>
+                    <a href="./school.html">
+                        <li>
+                            <h2>スクール</h2>
+                        </li>
+                    </a><br>
+                    <a href="./form.html">
+                        <li>
+                            <h2>お問い合わせ<h2>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div id="hamIcon">
+                <button type="button" name="btn" class="hamburger hamburger--slider" id="hamburgerIcon">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <div class="hamburgerBlack"><img src="./image/hamburger-Circle.svg" alt=""></div>
+
+                </button>
+            </div>
+
+        </div>
+
+        <div class="quide">
+            <p>SKI&SNOWBOARD SCHOOL</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="imgContainerOutsideBox">
+            <div class="bannerSide2">
+                <h6> スキースクール 生徒募集中</h6>
+                <p> Ski School Booking Now</p>
+            </div>
+        </div>
+        <div class="imgContainerBox">
+            <div class="bannerSide">
+                <h6> スキースクール<br>生徒募集中</h6>
+                <p> Ski School<br>Booking Now</p>
+            </div>
+            <div id="imgContainer">
+                <img src="./image/schoolBanner.jpg" />
+                <img src="./image/schoolBanner2.jpg" />
+                <img src="./image/schooBanner3.jpg" />
+                <img src="./image/schoolBanner4.jpg" />
+                <img src="./image/schoolBanner5_main.jpg" />
+            </div>
+
+        </div>
+        <section class="sectionOne">
+            <div class="commonTitle">
+                <div class="commonTitleEn">
+                    <h2>Tutoring Movie</h2>
+                </div>
+                <div class="commonTitleJp">
+                    <h4>厳選ヴィデオ</h4>
+                </div>
+            </div>
+
+            <div class="sectionOneMovie wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s"> <iframe
+                    src="https://www.youtube.com/embed/BOdXZDHaKTE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="sectionOneMovie wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s"><iframe
+                    src="https://www.youtube.com/embed/QlwVFQz3eT8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+        </section>
+        <section class="sectionTwo">
+            <div class="commonTitle">
+                <div class="commonTitleEn">
+                    <h2>Teachers info</h2>
+                </div>
+                <div class="commonTitleJp">
+                    <h4>先生をご紹介</h4>
+                </div>
+            </div>
+            <div id="subMenu" class="subMenu">
+
+                <ul>
+                    <li>
+                        <a href="#" class="pos1">
+                            <span class="menuPreview"></span>
+                            <span class="menuImage"></span>
+                        </a>
+                        <div class="menuDescription">
+                            <h3>小山　先生</h3>
+                            <h4>The Preliminaries</h4>
+                            <ul class="subNav">
+                                <li><a href="#">SAJ技術員</a></li>
+                                <li><a href="#">東京技術チーム</a></li>
+                                <li><a href="#">SAJスノーボードナショナルデモンストレーター</a></li>
+                                <li><a href="#">デモンストレーター</a></li>
+                                <li><a href="#">[趣味]
+                                        合氣道</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="pos2">
+                            <span class="menuPreview"></span>
+                            <span class="menuImage"></span>
+                        </a>
+                        <div class="menuDescription">
+                            <h3>もり　先生</h3>
+                            <h4>The Fighting　of 1990</h4>
+
+                            <p>
+                                <ul class="subNav">
+                                    <li><a href="#">日本山岳ガイド協会登山ガイド</a></li>
+                                    <li><a href="#">草津森の癒しトレーナー</a></li>
+                                    <li><a href="#">SAJ技術員</a></li>
+                                    <li><a href="#">日本赤十字社救急法救急員</a></li>
+                                    <li><a href="#">[趣味]
+                                            バレーボール</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="pos3">
+                            <span class="menuPreview"></span>
+                            <span class="menuImage"></span>
+                        </a>
+                        <div class="menuDescription">
+                            <h3>たくや　先生</h3>
+                            <h4>Movers of 1870</h4>
+
+                            <p>
+                                <ul class="subNav">
+                                    <li><a href="#">SAJスノーボードデモンストレーター</a></li>
+                                    <li><a href="#">SAJ技術員</a></li>
+                                    <li><a href="#">草津生まれ草津育ちの若手教師</a></li>
+                                    <li><a href="#">JNFAアドバンスインストラクター</a></li>
+                                    <li><a href="#">[趣味]
+                                            旅行</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="pos4">
+                            <span class="menuPreview"></span>
+                            <span class="menuImage"></span>
+                        </a>
+                        <div class="menuDescription">
+                            <h3>野田　先生</h3>
+                            <h4>The Chronology of 1870</h4>
+
+                            <p>
+                                <ul class="subNav">
+                                    <li><a href="#">ショップ　カンダハー</a></li>
+                                    <li><a href="#">やさしいみんなの人気者♪</a></li>
+                                    <li><a href="#">体育会系 Vegan 教師ゆきえ先生。</a></li>
+                                    <li><a href="#">アルペン競技出身。</a></li>
+                                    <li><a href="#">[趣味]
+                                            NIKU！</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    <li class="number5">
+                        <a href="#" class="pos5">
+                            <span class="menuPreview"></span>
+                            <span class="menuImage"></span>
+                        </a>
+                        <div class="menuDescription">
+                            <h3>れいこ　先生</h3>
+                            <h4>Battle Narratives-71</h4>
+
+                            <p>
+                                <ul class="subNav">
+                                    <li><a href="#">ショップ　カンダハー</a></li>
+                                    <li><a href="#">やさしいみんなの人気者♪</a></li>
+                                    <li><a href="#">体育会系 Vegan 教師ゆきえ先生。</a></li>
+                                    <li><a href="#">アルペン競技出身。</a></li>
+                                    <li><a href="#">[趣味]
+                                            バドミントン</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="number6">
+                        <a href="#" class="pos6">
+                            <span class="menuPreview"></span>
+                            <span class="menuImage"></span>
+                        </a>
+                        <div class="menuDescription">
+                            <h3>鎗田　先生</h3>
+                            <h4>Battle Narratives　71</h4>
+
+                            <p>
+                                <ul class="subNav">
+                                    <li><a href="#">SAJスノーボードデモンストレーター</a></li>
+                                    <li><a href="#">SAJ技術員</a></li>
+                                    <li><a href="#">草津生まれ草津育ちの若手教師</a></li>
+                                    <li><a href="#">JNFAアドバンスインストラクター</a></li>
+                                    <li><a href="#">[趣味]
+                                            おいしいスイーツ探し♪</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="number7">
+                        <a href="#" class="pos7">
+                            <span class="menuPreview"></span>
+                            <span class="menuImage"></span>
+                        </a>
+                        <div class="menuDescription">
+                            <h3>淺井　先生</h3>
+                            <h4>Narratives of 1870-71</h4>
+
+                            <p>
+                                <ul class="subNav">
+                                    <li><a href="#">SAJ技術員</a></li>
+                                    <li><a href="#">JNFA　べーシックインストラクター</a></li>
+                                    <li><a href="#">日本赤十字社救急法救急員</a></li>
+                                    <li><a href="#">日本温泉地域学会　温泉観光士</a></li>
+                                    <li><a href="#">[趣味]
+                                            おいしいスイーツ探し♪</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="number8">
+                        <a href="#" class="pos8">
+                            <span class="menuPreview"></span>
+                            <span class="menuImage"></span>
+                        </a>
+                        <div class="menuDescription">
+                            <h3>淺井　先生</h3>
+                            <h4>Narratives of 1870-71</h4>
+
+                            <p>
+                                <ul class="subNav">
+                                    <li><a href="#">SAJ技術員</a></li>
+                                    <li><a href="#">JNFA　べーシックインストラクター</a></li>
+                                    <li><a href="#">日本赤十字社救急法救急員</a></li>
+                                    <li><a href="#">日本温泉地域学会　温泉観光士</a></li>
+                                    <li><a href="#">[趣味]
+                                            おいしいスイーツ探し♪</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+        <div class="container teacher_forSm">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 product-grid_border product-grid_borderBottom">
+                    <div class="product-grid">
+                        <h3>たくや　先生</h3>
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="./image/teacher01.png">
+                                <img class="pic-2" src="./image/teacher02.png">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+                                <li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">The Preliminaries</a></h3>
+                            <ul>
+                                <li>SAJ技術員</li>
+                                <li>東京技術チーム</li>
+                                <li>SAJスノーボードナショナルデモンストレーター</li>
+                                <li>デモンストレーター</li>
+                                <li>[趣味]合氣道</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-grid_borderBottom">
+                    <div class="product-grid">
+                        <h3>鎗田　先生</h3>
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="./image/teacher03.png">
+                                <img class="pic-2" src="./image/teacher04.png">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+                                <li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">he Fighting　of 1990</a></h3>
+                            <ul>
+                                <li>日本山岳ガイド協会登山ガイド</li>
+                                <li>草津森の癒しトレーナー</li>
+                                <li>SAJ技術員</li>
+                                <li>日本赤十字社救急法救急員</li>
+                                <li>[趣味]バレーボール</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-grid_border product-grid_borderBottom">
+                    <div class="product-grid">
+                        <h3>淺井　先生</h3>
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="./image/teacher05.png">
+                                <img class="pic-2" src="./image/teacher06.png">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+                                <li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Movers of 1870</a></h3>
+                            <ul>
+                                <li>SAJスノーボードデモンストレーター</li>
+                                <li>SAJ技術員</li>
+                                <li>草津生まれ草津育ちの若手教師</li>
+                                <li>JNFAアドバンスインストラクター</li>
+                                <li>[趣味]旅行</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-grid_borderBottom">
+                    <div class="product-grid">
+                        <h3>れいこ　先生</h3>
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="./image/teacher01.png">
+                                <img class="pic-2" src="./image/teacher02.png">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+                                <li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">The Chronology of 1870</a></h3>
+                            <ul>
+                                <li>ショップ　カンダハー</li>
+                                <li>やさしいみんなの人気者♪</li>
+                                <li>体育会系 Vegan 教師ゆきえ先生。</li>
+                                <li>アルペン競技出身。</li>
+                                <li>[趣味]NIKU！</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="break"></div>
+        <section class="sectionThree">
+            <div class="commonTitle">
+                <div class="commonTitleEn">
+                    <h2>Shool Tuition Fee</h2>
+                </div>
+                <div class="commonTitleJp">
+                    <h4>スクール料金</h4>
+                </div>
+            </div>
+            <ul class="nav">
+                <li class="changeColor _selected" style="border-left: 2px solid rgb(4, 151, 195);"
+                    onclick='startLesson(event, "first")'><span>
+                        一般レッスン</span></li>
+                <li class="changeColor" onclick='startLesson(event, "sec")'><span>プライベートレッスン</span></li>
+                <li class="changeColor" onclick='startLesson(event, "third")'><span>団体レッスン(講師1名派遣)</span></li>
+                <li class="changeColor" style="border-right: 2px solid rgb(4, 151, 195);"
+                    onclick='startLesson(event, "four")'><span>子供レッスン</span></li>
+            </ul>
+            <div class="content wow fadeIn" data-wow-duration="10s" data-wow-delay="0.3s">
+                <div id="first" class="list ">
+                    <div class="rentalBox">
+
+                        <div class="rentalPic"><img src="./image/nomal.jpg" alt=""></div>
+                        <div class="rentalPicText">
+
+                            <table class="fancytable">
+                                <tr class="headerrow">
+                                    <td>料金</td>
+                                    <td>半日(2時間)￥4,000</td>
+                                    <td>1日(4時間)￥7,000 </td>
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td>レッスン時間</td>
+                                    <td>午前10:15～12:15</td>
+                                    <td>午後13:45～15:45</td>
+                                </tr>
+                                <tr class="datarowodd">
+                                    <td>クラス・対象</td>
+                                    <td colspan="2">クラス・対象</td>
+
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td>受付時間</td>
+                                    <td colspan="2">9:00～10:00, 12:00～13:30</td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="sec" class="list" style="display: none;">
+                    <div class="rentalBox">
+
+                        <div class="rentalPic"><img src="./image/rentalBanner1.png" alt=""></div>
+                        <div class="rentalPicText">
+
+                            <table class="fancytable">
+                                <tr class="headerrow">
+                                    <td rowspan="2">料金</td>
+                                    <td>1時間</td>
+                                    <td>(1名)￥8,500 </td>
+                                    <td>(2名)￥17,000</td>
+                                </tr>
+                                <tr class="dataroweven">
+
+                                    <td>2時間</td>
+                                    <td>(1名)￥14,000</td>
+                                    <td>(2名)￥28,000</td>
+                                </tr>
+                                <tr class="datarowodd">
+                                    <td>レッスン時間</td>
+                                    <td colspan="3">9:00～16:00からお好きな時間を選べます</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="third" class="list " style="display: none;">
+                    <div class="rentalBox">
+
+                        <div class="rentalPic"><img src="./image/test.jpg" alt=""></div>
+                        <div class="rentalPicText">
+
+                            <table class="fancytable">
+                                <tr class="headerrow">
+                                    <td>検定料</td>
+                                    <td>￥4,000</td>
+                                    <td>￥4,000</td>
+                                    <td>￥4,000</td>
+                                    <td>￥4,000</td>
+                                    <td>￥4,000</td>
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td>公認料</td>
+                                    <td>￥3,000</td>
+                                    <td>￥2,200</td>
+                                    <td>￥1,800</td>
+                                    <td>￥1,300</td>
+                                    <td>￥1,100</td>
+                                </tr>
+                                <tr class="datarowodd">
+                                    <td>事前講習料</td>
+                                    <td>￥4,000</td>
+                                    <td> - </td>
+                                    <td> - </td>
+                                    <td> - </td>
+                                    <td> - </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="four" class="list" style="display: none;">
+                    <div class="rentalBox">
+
+                        <div class="rentalPic"><img src="./image/kid.jpg" alt=""></div>
+                        <div class="rentalPicText">
+
+                            <table class="fancytable">
+                                <tr class="headerrow">
+                                    <td>料金・時間</td>
+                                    <td colspan="3">(1.5時間)￥4,000、午前10:15〜11:45、午後13:45〜15:15</td>
+
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td rowspan="2">クラス・対象</td>
+                                    <td>スキー</td>
+                                    <td>4〜7歳</td>
+                                    <td>毎日営業</td>
+                                </tr>
+                                <tr class="datarowodd">
+
+                                    <td>ボード</td>
+                                    <td>5〜8歳</td>
+                                    <td>土・日・祝日のみ開校</td>
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td>受付時間</td>
+                                    <td colspan="3">9:00～10:00, 12:00～13:30</td>
+
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="break"></div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerLogo"><img src="./image/logoWhite-08.png" alt=""></div>
+            <div class="footerLeft">
+                <p>
+                    パウダースノーリゾート<br> 025-783-4100 〒949-6423 <br>
+                    新潟県南魚沼市舞子1819-79 <br>
+                    パウダー日帰りスキ</p>
+            </div>
+            <div class="footerCenter">
+                <p>
+                    会社情報 <br>ライブカメラ <br>グリーンパーク山東 <br>プライバシーポリシー</p>
+            </div>
+            <div class="footerRight">
+                <p> 予約状況 <br>イベント一覧 <br>イベントを主催したい方 <br>モーターパーク</p>
+            </div>
+        </div>
+        <div class="footerLast">
+            <span> ご利用規約</span>
+            <span> 運営会社</span>
+            <span> よくあるご質問</span>
+            <span> 安全報告書</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="./js/common.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <!-- <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script> -->
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/clientLogin.js"></script>
+    <script src="./js/warTextEffect_jvollmer3.js"></script>
+    <script src="./js/jquery.accordianMenu_jvollmer3.js"></script>
+    <script src="./js/imgSwitch.js"></script>
+    <script src="./js/imgSwitch.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        window.onload = function () {
+            new imgSwitch("imgContainer", {
+                Type: 10,
+                Width: 860,
+                Height: 280,
+                Speed: "slow",
+                Auto: true,
+                Navigate: "none",
+                NavigatePlace: "outer",
+                PicturePosition: "center"
+            })
+        }
+    </script>
+    <script>
+        $(function () {
+
+            $('#subMenu').accordianMenu();
+
+        });
+    </script>
+    <script>
+        function slideToLeft() {
+            ham = document.getElementById("ham");
+            if (ham.classList.contains("show")) {
+                ham.classList.remove("show");
+            } else {
+                ham.classList.add("show");
+            }
+        }
+
+        slideHam = document.getElementsByClassName("hamburger");
+        slideHam[0].addEventListener("click", slideToLeft, false);
+        closeHam = document.getElementById("InsideHamburger");
+    </script>
+
+
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+
+            },
+
+        });
+        wow.init();
+    </script>
+    <Script>
+        var VisibleMenu = '';
+
+        function switchMenu(theMainMenu, theSubMenu, theEvent) {
+            var SubMenu = document.getElementById("hotelBoxInside");
+            if (SubMenu.style.display == 'none') { // 顯示子選單
+                SubMenu.style.display = 'block';
+                VisibleMenu = theSubMenu;
+            } else { // 隱藏子選單
+                if (theEvent != 'MouseOver' || VisibleMenu != theSubMenu) {
+                    SubMenu.style.display = 'none';
+                    VisibleMenu = '';
+                }
+            }
+        }
+
+
+
+
+        var bodyClass = document.body.classList,
+            lastScrollY = 0;
+        window.addEventListener('scroll', function () {
+            var st = this.scrollY;
+            // 判斷是向上捲動，而且捲軸超過 200px
+            if (st < lastScrollY) {
+                bodyClass.remove('hideUp');
+            } else {
+                bodyClass.add('hideUp');
+            }
+            lastScrollY = st;
+        });
+    </Script>
+
+    <script>
+        function startLesson(evt, lesson) {
+            var i, x, lessons;
+            x = document.getElementsByClassName("list");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            lessons = document.getElementsByClassName("changeColor");
+
+            for (i = 0; i < x.length; i++) {
+                lessons[i].className = lessons[i].className.replace(" _selected", "");
+
+            }
+            document.getElementById(lesson).style.display = "block";
+            evt.currentTarget.className += " _selected";
+        }
+    </script>
+</body>
+
+</html>

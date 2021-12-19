@@ -1,0 +1,1087 @@
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap&subset=japanese,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,600,700,900&display=swap&subset=japanese');
+
+a:hover {
+    text-decoration: none;
+}
+
+.topbanner {
+    background: url("../image/Sushi-HD-Wallpaper.png") center;
+    margin: 0 auto;
+}
+
+
+#restaurantMainFirst {
+    width: 100%;
+    padding-top: 50px;
+    background-image: url("../image/bodybackgoundImg.png");
+}
+
+#restaurantMainFirst .commonTitle {
+    padding-bottom: 0;
+}
+
+.wrapper {
+    width: 90%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+}
+
+.scene {
+    padding: 0;
+    margin: 0;
+}
+
+ul#scene {
+    list-style-type: none;
+}
+
+.layer {
+    display: block;
+    height: 100%;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+
+}
+
+.moveUp,
+.moveDown {
+    width: 220px;
+    overflow: hidden;
+    border-radius: 70%;
+}
+
+.layer img {
+    width: 100%
+}
+
+.topLogo {
+    width: 210px;
+    height: 70px;
+
+}
+
+.topLogo img {
+    width: 100%
+}
+
+.wrapper li.layer a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px #ccc;
+    display: block;
+}
+
+.wrapper li.layer:nth-child(1) {}
+
+/*1 item*/
+
+/*-----Logotype----------------*/
+.wrapper li.layer:nth-child(2) a {
+    z-index: 0;
+    position: absolute;
+    top: 40vh;
+    left: 42vw;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
+
+.wrapper li.layer:nth-child(2) a:hover {
+    z-index: 99;
+    transform: scale(1.5);
+    filter: brightness(1.2);
+}
+
+
+.wrapper li.layer:nth-child(3) a:hover {
+    filter: brightness(1.2);
+}
+
+.wrapper li.layer:nth-child(4) a:hover {
+    filter: brightness(1.2);
+}
+
+.wrapper li.layer:nth-child(5) a:hover {
+    filter: brightness(1.2);
+}
+
+.wrapper li.layer:nth-child(6) a:hover {
+    filter: brightness(1.2);
+}
+
+.wrapper li.layer:nth-child(7) a:hover {
+    filter: brightness(1.2);
+}
+
+.wrapper li.layer:nth-child(8) a:hover {
+    filter: brightness(1.2);
+}
+
+.wrapper li.layer:nth-child(9) a:hover {
+    filter: brightness(1.2);
+}
+
+.wrapper li.layer:nth-child(10) a:hover {
+    filter: brightness(1.2);
+}
+
+.wrapper li.layer:nth-child(11) a:hover {
+    filter: brightness(1.2);
+}
+
+/*-----P----------------------*/
+.wrapper li.layer:nth-child(3) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+}
+
+/*-----O---------------------*/
+.wrapper li.layer:nth-child(4) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 30vh;
+    left: 15vw;
+}
+
+/*-----R---------------------*/
+.wrapper li.layer:nth-child(5) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 64vh;
+    left: 40vw;
+}
+
+/*-----T---------------------*/
+.wrapper li.layer:nth-child(6) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 55vh;
+    left: 57vw;
+}
+
+/*-----F---------------------*/
+.wrapper li.layer:nth-child(7) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 50vh;
+    left: 25vw;
+}
+
+/*-----O---------------------*/
+.wrapper li.layer:nth-child(8) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 10vh;
+    left: 55vw;
+}
+
+/*-----L---------------------*/
+.wrapper li.layer:nth-child(9) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 5vh;
+    left: 40vw;
+}
+
+/*-----I---------------------*/
+.wrapper li.layer:nth-child(10) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 32vh;
+    right: 15vw;
+}
+
+/*-----O---------------------*/
+.wrapper li.layer:nth-child(11) a {
+    font-size: 3.5vw;
+    position: absolute;
+    top: 50vh;
+    right: 19vw;
+}
+
+
+#restaurant {
+    width: 70%;
+    margin: 0 auto;
+    display: none;
+}
+
+.IgSpecial {
+    text-align: center;
+    width: 100%;
+    margin: 7% 0;
+}
+
+
+
+.insPic {
+    width: 100%;
+
+}
+
+#restaurant ul {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+
+}
+
+#restaurant li {
+
+    align-self: center;
+    list-style: none;
+    width: 30%;
+    margin: 0.8% 0;
+
+}
+
+#restaurant li img {
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
+    transition: all 1s;
+}
+
+#restaurant li:hover img {
+    filter: saturate(1.5);
+    transform: scale(1.1);
+}
+
+#restaurantSec2 {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+/* .restaurantSec2 {
+    margin-top: 100px;
+    width: 30%;
+    border-bottom: 2px solid rgba(34, 34, 34, 0.9);
+
+}
+
+.restaurantSec2 p {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    color: rgba(34, 34, 34, 0.7);
+
+} */
+
+.resBox {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 5% 5%;
+}
+
+.resPic_hide {
+    display: none;
+}
+
+.resLogo {
+    width: 40%;
+    padding-left: 5%;
+    height: 100%;
+
+}
+
+.resLogo p {
+    margin-top: 50px;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(12, 12, 12);
+    width: 100%;
+}
+
+.resLogo img {
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.resPic {
+    width: 50%;
+}
+
+.resPic_smHide {
+    width: 50%;
+    display: block;
+}
+
+.resPic img {
+    width: 100%;
+
+}
+
+
+.linkBtn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+}
+
+.resPic {
+    width: 50%;
+}
+
+
+
+.leftResLogo {
+    padding-left: 0;
+    padding-right: 5%;
+}
+
+.resBox .resLogoText {
+    width: 100%;
+    line-height: 20px;
+    padding-bottom: 50px;
+}
+
+.resPic,
+.resPic_smHide {
+    width: 50%;
+}
+
+.resPic img,
+.resPic_smHide img {
+    width: 100%;
+}
+
+.demo {
+    padding: 1em 0 5em 0;
+}
+
+.pagination-outer {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-flex;
+    position: relative;
+}
+
+.pagination li a.page-link {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: gray;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.pagination li:last-child a.page-link {
+    margin-right: 0;
+}
+
+.pagination li.active a.page-link,
+.pagination li a.page-link:hover,
+.pagination li.active a.page-link:hover {
+    color: gray;
+    border: none;
+    background: transparent;
+}
+
+.pagination li a.page-link:before {
+    border-radius: 20%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: border-top-width 0.1s ease 0.2s, height 0.2s ease 0.1s, width 0.2s ease 0s, margin 0.2s ease 0s;
+}
+
+.pagination li.active a.page-link:before,
+.pagination li a.page-link:hover:before,
+.pagination li.active a.page-link:hover:before {
+    width: 60%;
+    height: 0;
+    border-width: 0 1px 1px;
+    margin: 0 20%;
+    transition: border-top-width 0.1s ease 0s, height 0.2s ease 0.1s, width 0.2s ease 0.2s, margin 0.2s ease 0.2s;
+}
+
+
+
+
+@media only screen and (max-width: 479px) {
+    .pagination {
+        display: block;
+    }
+
+    .pagination li {
+        display: inline-block;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1440px) and (max-width: 1680px) {
+    .wrapper {
+        width: 95%;
+        height: 90vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .moveUp,
+    .moveDown {
+        width: 200px;
+        overflow: hidden;
+        border-radius: 70%;
+    }
+
+
+    .topLogo {
+        width: 195px;
+        height: 65px;
+
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+        height: 90vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .moveUp,
+    .moveDown {
+        width: 180px;
+        overflow: hidden;
+        border-radius: 70%;
+    }
+
+
+    .topLogo {
+        width: 180px;
+        height: 60px;
+
+    }
+
+    #restaurantSec2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #restaurant {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #restaurant ul {
+        margin: 0 auto;
+        display: flex;
+        width: 90%;
+
+    }
+
+
+    #restaurant li img {
+        margin-left: 5%;
+        width: 90%;
+        transition: all 1s;
+    }
+
+    .resBox {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding: 5% 5%;
+    }
+
+    .resLogo {
+        width: 50%;
+        padding-left: 5%;
+
+    }
+
+    .leftResLogo {
+        padding-left: 0;
+        padding-right: 5%;
+    }
+
+    .resBox .resLogoText {
+        width: 100%;
+        line-height: 20px;
+        padding-bottom: 50px;
+    }
+
+    .resLogo img {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .resPic,
+    .resPic_smHide {
+        width: 50%;
+    }
+
+    .resPic img,
+    .resPic_smHide img {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .wrapper {
+        width: 100%;
+        height: 90vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .moveUp,
+    .moveDown {
+        width: 160px;
+        overflow: hidden;
+        border-radius: 70%;
+    }
+
+
+    .topLogo {
+        width: 165px;
+        height: 55px;
+
+    }
+
+    #restaurantSec2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #restaurant {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #restaurant ul {
+        margin: 0 auto;
+        display: flex;
+        width: 90%;
+
+    }
+
+
+    #restaurant li img {
+        margin-left: 5%;
+        width: 90%;
+        transition: all 1s;
+    }
+
+    .resBox {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding: 5% 5%;
+
+    }
+
+    .resPic {
+        width: 50%;
+    }
+
+    .resLogo {
+        width: 50%;
+        padding-left: 5%;
+        overflow: hidden;
+
+    }
+
+    .leftResLogo {
+        padding-left: 0;
+        padding-right: 5%;
+    }
+
+    .resBox .resLogoText {
+        width: 100%;
+        line-height: 20px;
+        padding-bottom: 50px;
+    }
+
+    .resLogo img {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .resPic,
+    .resPic_smHide {
+        width: 50%;
+    }
+
+    .resPic img,
+    .resPic_smHide img {
+        width: 100%;
+    }
+    .linkBtn {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-25%, -50%);
+        padding-bottom: 50px;
+
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+
+    #restaurant {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #restaurant ul {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+
+    }
+
+    #restaurant li {
+
+        align-self: center;
+        list-style: none;
+        width: 48%;
+        margin: 0 1%;
+
+    }
+
+
+    #restaurant li img {
+        border-radius: 2em;
+        margin-top: 50px;
+        margin-left: 5%;
+        width: 90%;
+        transition: all 1s;
+    }
+
+    #restaurantSec2 {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .resLogo {
+        width: 50%;
+        padding-left: 5%;
+        overflow: hidden;
+    }
+
+    .leftResLogo {
+        padding-left: 0;
+        padding-right: 5%;
+    }
+
+    .resLogo img {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .resBox {
+        font-size: 0;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding: 5% 5%;
+    }
+
+    .resPic,
+    .resPic_smHide {
+        width: 50%;
+    }
+
+    .resPic img,
+    .resPic_smHide img {
+        width: 100%;
+    }
+
+    .resBox .resLogoText {
+        width: 100%;
+        line-height: 20px;
+        padding-bottom: 30px;
+    }
+
+    .resBox .resLogoText p {
+
+        width: 100%;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 600;
+        color: rgba(34, 34, 34, 0.7);
+        margin-top: 0;
+    }
+
+    .linkBtn {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-25%, -50%);
+        padding-bottom: 50px;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width:767px) {
+    .wrapper {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+
+    #restaurant {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    #restaurant2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .IgSpecial {
+        padding: 70px 0 50px 0;
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .IgSpecial img {
+        width: 100%;
+    }
+
+    #restaurant ul {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+
+    }
+
+    #restaurant li {
+        align-self: center;
+        list-style: none;
+        width: 50%;
+        margin: 0.8% 0;
+
+    }
+
+    #restaurant li img {
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 90%;
+        transition: all 1s;
+    }
+
+    .resBox {
+        width: 90%;
+        display: block;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding: 5% 2%;
+
+    }
+
+    .resLogo img {
+        margin: 10% 0;
+        width: 100%;
+    }
+
+    .resPic {
+        width: 100%;
+    }
+
+    .resLogo {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .resPic_hide {
+        text-align: center;
+        width: 100%;
+        display: block;
+
+
+    }
+
+    .resPic_hide img {
+
+        width: 100%;
+
+    }
+
+    .resPic_smHide {
+        display: none;
+    }
+
+    .resPic img {
+        width: 100%;
+
+    }
+
+    .resBox .resLogoText p {
+
+        width: 100%;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 600;
+        color: rgba(34, 34, 34, 0.7);
+        margin-top: 0;
+    }
+
+    .resBox .resLogoText {
+        width: 100%;
+        line-height: 30px;
+        padding-bottom: 50px;
+    }
+
+    .linkBtn {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-25%, -50%);
+        padding-bottom: 50px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 499px) {
+
+    .wrapper {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+
+    #restaurant {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    #restaurant2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .IgSpecial {
+        padding: 70px 0 50px 0;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .IgSpecial img {
+        width: 100%;
+    }
+
+    #restaurant ul {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+
+    }
+
+    #restaurant li {
+        align-self: center;
+        list-style: none;
+        width: 50%;
+        margin: 0.8% 0;
+
+    }
+
+    #restaurant li img {
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 90%;
+        transition: all 1s;
+    }
+
+    .resBox {
+        width: 90%;
+        display: block;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding: 5% 2%;
+
+    }
+
+    .resLogo img {
+        margin: 10% 0;
+        width: 100%;
+    }
+
+    .resPic {
+        width: 100%;
+    }
+
+    .resLogo {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .resPic_hide {
+        text-align: center;
+        width: 100%;
+        display: block;
+
+
+    }
+
+    .resPic_hide img {
+
+        width: 100%;
+
+    }
+
+    .resPic_smHide {
+        display: none;
+    }
+
+    .resPic img {
+        width: 100%;
+
+    }
+
+    .resBox .resLogoText p {
+
+        width: 100%;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 600;
+        color: rgba(34, 34, 34, 0.7);
+        margin-top: 0;
+    }
+
+    .resBox .resLogoText {
+        width: 100%;
+        line-height: 30px;
+        padding-bottom: 50px;
+    }
+
+    .linkBtn {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-25%, -50%);
+        padding-bottom: 50px;
+
+    }
+
+    .pagination li a.page-link {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin-right: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        color: gray;
+        position: relative;
+        transition: all 0.3s ease 0s;
+    }
+
+
+
+}

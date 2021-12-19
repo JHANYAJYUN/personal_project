@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ホテル紹介</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./stylesheet/hamburgers.css">
+	<link rel="stylesheet" href="./stylesheet/hotel2.css">
+	<link rel="stylesheet" href="./stylesheet/Common.css">
+	<link rel="stylesheet" href="./stylesheet/hotel.css">
+	<script src="./js/modernizr.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="suportArea">
+			<a href="./form.html">
+				<div class="suport"><span> お問い合わせ</span></div>
+			</a>
+		</div>
+		<div id="headerBanner">
+			<nav id="navbar2">
+				<ul>
+					<li class="logo"><a href="./index.html">
+							<img src="./image/logo_black-08.png" alt=""></a>
+					</li>
+					<li><a href="./Area.html">
+							<div class="underline">
+								<p>ゲレンデ</p>
+							</div>
+						</a></li>
+					<li class="bline">
+					</li>
+
+					<li> <a href="./Lift.html">
+							<div class="underline">
+								<p>リフト料金</p>
+							</div>
+						</a></li>
+					<li class="bline">
+					</li>
+					<li id="hotelBox2" onmouseover="switchMenu2( this, 'hotelBoxInside2', 'MouseOver' )"
+						onmouseout="hideMenu2()"> <a href="#">
+							<div class="circle">
+								<p>ホテル</p>
+							</div>
+						</a>
+						<div id="hotelBoxInside2">
+							<ul>
+								<a href="">
+									<li><img src="./image/Navhotel1.jpg" alt="">
+										<h5>王子第一ホテル</h5>
+									</li>
+								</a>
+								<a href="">
+									<li><img src="./image/navhotel2.jpg" alt="">
+										<h5>パウダーホテル</h5>
+									</li>
+								</a>
+								<a href="">
+									<li><img src="./image/navhotel3.jpg" alt="">
+										<h5>綾会館</h5>
+									</li>
+								</a>
+							</ul>
+						</div>
+					</li>
+					<li class="bline">
+					</li>
+					<li> <a href="./Dining.html">
+							<div class="underline">
+								<p> レストラン</p>
+							</div>
+						</a></li>
+					<li class="bline">
+					</li>
+
+					<li> <a href="./Rental.html">
+							<div class="underline">
+								<p>レンタル</p>
+							</div>
+						</a></li>
+
+					<li class="bline">
+					</li>
+					<li> <a href="./school.html">
+							<div class="underline">
+								<p> スクール</p>
+							</div>
+						</a></li>
+
+				</ul>
+			</nav>
+
+
+			<div id="ham">
+				<ul>
+					<a href="./index.html">
+						<li>
+							<h2>トップページ</h2>
+						</li>
+					</a><br>
+					<a href="./Area.html">
+						<li>
+							<h2> ゲレンデ</h2>
+						</li>
+					</a><br>
+					<a href="./Lift.html">
+						<li>
+							<h2>リフト料金</h2>
+						</li>
+					</a><br>
+					<a href="#">
+						<li>
+							<h2>ホテル</h2>
+						</li>
+					</a><br>
+					<a href="./Dining.html">
+						<li>
+							<h2>レストラン</h2>
+						</li>
+					</a><br>
+					<a href="./Rental.html">
+						<li>
+							<h2>レンタル</h2>
+						</li>
+					</a><br>
+					<a href="./school.html">
+						<li>
+							<h2>スクール</h2>
+						</li>
+					</a><br>
+					<a href="./form.html">
+						<li>
+							<h2>お問い合わせ<h2>
+						</li>
+					</a>
+				</ul>
+			</div>
+
+
+			<div id="hamIcon">
+				<button type="button" name="btn" class="hamburger hamburger--slider" id="hamburgerIcon">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+					<div class="hamburgerBlack"><img src="./image/hamburger-Circle.svg" alt=""></div>
+
+				</button>
+			</div>
+		</div>
+
+		<div class="quide">
+			<p>HOTEL</p>
+		</div>
+		<div class="topbanner"></div>
+	</header>
+	<main>
+		<section id="hotelSectionFir">
+			<div class='pages'>
+				<input id='one' name='trigger' type='radio'>
+				<input id='two' name='trigger' type='radio'>
+				<input id='three' name='trigger' type='radio'>
+				<input id='four' name='trigger' type='radio'>
+				<div class='pages_page'>
+					<div class='pages_page__inner'>
+						<div class='logoPage'>王子第一ホテル</div>
+						<div class='pagenumber'>1 2</div>
+						<div class='content'>
+							<div class='content_center'>
+								<h4>Winter Season&amp;Best　Memories</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='pages_page'>
+					<div class='pages_page__inner'>
+						<div class='content'>
+							<div class='content_center right'>
+								<h4>Winter Season&amp;Best　Memories</h4>
+							</div>
+							<div class='overlay1'></div>
+						</div>
+						<div class='control next'>
+							<label for='two'></label>
+						</div>
+					</div>
+				</div>
+				<div class='pages_page'>
+					<div class='pages_page__inner'>
+						<div class='logoPage'>王子第一ホテル</div>
+						<div class='pagenumber'>2 3</div>
+						<div class='control'>
+							<label for='one'></label>
+						</div>
+						<div class='content'>
+							<div class='content_picture'>
+								<img src='img/'>
+							</div>
+							<div class='content_offset'>
+								<h2>Relaxly</h2>
+								<p>雄大な羊蹄山を望む”夕映えの宿”<br>館内全室がオーシャンビュー日本海の絶景を愉しむひとときをお過ごしください</p>
+							</div>
+							<h1>
+								<span>W</span>
+								<span>E</span>
+								<span>L</span>
+								<span>C</span>
+								<span>O</span>
+								<span>M</span>
+								<span>E</span>
+								<span>&nbsp;</span>
+								<span>T</span>
+								<span>O</span>
+								<span>&nbsp;</span>
+								<span>N</span>
+								<span>E</span>
+								<span>W</span>
+								<span>&nbsp;</span>
+								<span>H</span>
+								<span>A</span>
+								<span>U</span>
+								<span>S</span>
+								<span>O</span>
+								<br>
+								<span>E</span>
+								<span>N</span>
+								<span>J</span>
+								<span>O</span>
+								<span>Y</span>
+								<span>&nbsp;</span>
+								<span>T</span>
+								<span>H</span>
+								<span>E</span>
+								<span>&nbsp;</span>
+								<span>S</span>
+								<span>P</span>
+								<span>E</span>
+								<span>C</span>
+								<span>I</span>
+								<span>A</span>
+								<span>L</span>
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div class='pages_page'>
+					<div class='pages_page__inner'>
+
+						<div class='control next'>
+							<label for='three'></label>
+						</div>
+						<div class='bg'></div>
+
+						<div class='content'>
+							<div class='content_quote'>
+								<h5>
+									<span class='quo'>
+										<i>"</i>
+									</span>
+									<span>目の前にゲレンデが広がる</span>
+									<span>最高のロケーション</span>
+									<span class='quo'>"</span>
+								</h5>
+							</div>
+							<div class='content_picture'>
+								<img src='./image/img/hotelOutside.jpg'>
+							</div>
+							<h1>
+								<span>W</span>
+								<span>E</span>
+								<span>L</span>
+								<span>C</span>
+								<span>O</span>
+								<span>M</span>
+								<span>E</span>
+								<span>&nbsp;</span>
+								<span>T</span>
+								<span>O</span>
+								<span>&nbsp;</span>
+								<span>N</span>
+								<span>E</span>
+								<span>W</span>
+								<span>&nbsp;</span>
+								<span>H</span>
+								<span>A</span>
+								<span>U</span>
+								<span>S</span>
+								<span>O</span>
+								<br>
+								<span>E</span>
+								<span>N</span>
+								<span>J</span>
+								<span>O</span>
+								<span>Y</span>
+								<span>&nbsp;</span>
+								<span>T</span>
+								<span>H</span>
+								<span>E</span>
+								<span>&nbsp;</span>
+								<span>S</span>
+								<span>P</span>
+								<span>E</span>
+								<span>C</span>
+								<span>I</span>
+								<span>A</span>
+								<span>L</span>
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div class='pages_page'>
+					<div class='pages_page__inner'>
+						<div class='logoPage'>王子第一ホテル</div>
+						<div class='pagenumber'>4 5</div>
+						<div class='content'>
+							<div class='content_center'>
+								<h4>Sun Valley wants each and every guest to be engaged and have an excellent experience
+								</h4>
+								<h6>Sun Valley, Idaho</h6>
+							</div>
+						</div>
+						<div class='control'>
+							<label for='two'></label>
+						</div>
+					</div>
+				</div>
+				<div class='pages_page'>
+					<div class='pages_page__inner'>
+
+						<div class='control next'>
+							<label for='four'></label>
+						</div>
+						<div class='bg'></div>
+						<div class='content_centerimage'>
+							<img src='./image/img/DeOGSNPVAAA0z33.jpg'>
+						</div>
+						<div class='content'>
+							<div class='content_center right'>
+								<h4>Sun Valley wants each and every guest to be engaged and have an excellent experience
+								</h4>
+								<h6>Sun Valley, Idaho</h6>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class='pages_page'>
+					<div class='pages_page__inner'>
+						<div class='logoPage'>王子第一ホテル</div>
+						<div class='pagenumber'>6 7</div>
+						<div class='content'>
+							<div class='content_section'>
+								<h2>Heavenly</h2>
+								<p>Want a funny, informative view of resorts, events, and just about anything that's
+									happening on snow? You’re in the right place. Every episode is a guaranteed good
+									time</p>
+							</div>
+							<div class='content_section'>
+								<h2>Awesome</h2>
+								<p>Want a funny, informative view of resorts, events, and just about anything that's
+									happening on snow</p>
+							</div>
+
+						</div>
+						<div class='control'>
+							<label for='three'></label>
+						</div>
+					</div>
+				</div>
+				<div class='pages_page'>
+					<div class='pages_page__inner'>
+
+						<div class='bg'></div>
+						<div class='content'></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="commonTitle">
+			<div class="commonTitleEn">
+				<h2>Room Introduce</h2>
+			</div>
+			<div class="commonTitleJp">
+				<h4>部屋をご紹介</h4>
+			</div>
+		</div>
+		<ul class="cd-items cd-container">
+			<li class="cd-item box">
+				<img src="./image/01/hotel_01.jpg" alt="Item Preview">
+				<div class="hotelPicText">
+					<h2>エコノミータイプ</h2>
+				</div>
+				<div class="box-content">
+					<h3 class="title">エコノミータイプ</h3>
+					<span class="post">Eco Room</span>
+					<p></p>
+				</div>
+
+				<a href="#0" class="cd-trigger"></a>
+			</li> <!-- cd-item -->
+
+			<li class="cd-item box">
+				<img src="./image/02/hotel_02.jpg" alt="Item Preview">
+				<div class="hotelPicText">
+					<h2>スタンダードタイプ</h2>
+				</div>
+				<div class="box-content">
+					<h3 class="title">スタンダードタイプ</h3>
+					<span class="post">Stander Room</span>
+					<p></p>
+				</div>
+				<a href="#0" class="cd-trigger"></a>
+			</li> <!-- cd-item -->
+
+			<li class="cd-item box">
+				<img src="./image/03/hotel_03.jpg" alt="Item Preview">
+				<div class="hotelPicText">
+					<h2>スーペリアタイプ</h2>
+				</div>
+				<div class="box-content">
+					<h3 class="title">スーペリアタイプ</h3>
+					<span class="post">Sepelia Room</span>
+					<p></p>
+				</div>
+				<a href="#0" class="cd-trigger"></a>
+			</li> <!-- cd-item -->
+
+			<li class="cd-item box">
+				<img src="./image/04/hotel_04.jpg" alt="Item Preview">
+				<div class="hotelPicText">
+					<h2>デラックスタイプ</h2>
+				</div>
+				<div class="box-content">
+					<h3 class="title">デラックスタイプ</h3>
+					<span class="post">Deluxs Room</span>
+					<p></p>
+				</div>
+				<a href="#0" class="cd-trigger"></a>
+			</li> <!-- cd-item -->
+
+			<li class="cd-item box">
+				<img src="./image/05/hotel_05.jpg" alt="Item Preview">
+				<div class="hotelPicText">
+					<h2>和室タイプ</h2>
+				</div>
+				<div class="box-content">
+					<h3 class="title">和室タイプ</h3>
+					<span class="post">JapaneseStyle Room</span>
+					<p></p>
+				</div>
+				<a href="#0" class="cd-trigger"></a>
+			</li> <!-- cd-item -->
+
+			<li class="cd-item box">
+				<img src="./image/06/hotel_06.jpg" alt="Item Preview">
+				<div class="hotelPicText">
+					<h2>露天風呂付ルーム</h2>
+				</div>
+				<div class="box-content">
+					<h3 class="title">露天風呂付ルーム</h3>
+					<span class="post">HotSring Room</span>
+					<p></p>
+				</div>
+				<a href="#0" class="cd-trigger"></a>
+			</li> <!-- cd-item -->
+
+			<!-- cd-item -->
+		</ul> <!-- cd-items -->
+
+		<div class="cd-quick-view">
+			<div class="cd-slider-wrapper">
+				<ul class="cd-slider">
+					<li class="selected"><img src="./image/01/hotel_01.jpg" alt="Product 1"></li>
+					<li><img src="./image/01/hotel_011.jpg" alt="Product 2"></li>
+					<li><img src="./image/01/hotel_012.jpg" alt="Product 3"></li>
+					<li class="selected"><img src="./image/02/hotel_02.jpg" alt="Product 1"></li>
+					<li class="selected"><img src="./image/03/hotel_03.jpg" alt="Product 1"></li>
+					<li class="selected"><img src="./image/04/hotel_04.jpg" alt="Product 1"></li>
+					<li class="selected"><img src="./image/05/hotel_05.jpg" alt="Product 1"></li>
+					<li class="selected"><img src="./image/06/hotel_06.jpg" alt="Product 1"></li>
+				</ul>
+
+				<ul class="cd-slider-navigation">
+					<li><a class="cd-next" href="#0">Prev</a></li>
+					<li><a class="cd-prev" href="#0">Next</a></li>
+				</ul> <!-- cd-slider-navigation -->
+			</div> <!-- cd-slider-wrapper -->
+
+			<div class="cd-item-info">
+				<h2>エコノミータイプ ECONOMY TYPE</h2>
+				<p>五感を癒す森のぬくもり四季折々の森の彩を多彩なお部屋でお楽しみください</p>
+
+				<ul class="cd-item-action">
+					<li><a href="#0">View Detail</a></li>
+				</ul> <!-- cd-item-action -->
+			</div> <!-- cd-item-info -->
+			<a href="#0" id="cd-close" class="cd-close"></a>
+		</div>
+		<div id="outBox"> </div>
+		<div id="modal">
+
+			<ul class="modal_sm">
+				<li class="tablink modal_sm  selected" onclick="changeRoom(event, 'room1')">
+					<h4>部屋写真1</h4>
+				</li>
+				<li class="tablink modal_sm" onclick="changeRoom(event, 'room2')">
+					<h4>部屋写真2</h4>
+				</li>
+				<li class="tablink modal_sm" onclick="changeRoom(event, 'room3')">
+					<h4>部屋写真3</h4>
+				</li>
+			</ul>
+			<div id="card" class="modal_sm">
+				<div id="room1" class="card ">
+					<div class="cross">
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</div>
+					<img src="./image/01/hotel_01.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h3>エコノミータイプ <br>JapaneseStyle Room</h3>
+						<p class="card-text">五感を癒す森のぬくもり四季折々の森の彩を多彩なお部屋でお楽しみください</p>
+					</div>
+				</div>
+				<div id="room2" class="card" style="display: none;">
+					<div class="cross">
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</div>
+					<img src="./image/02/hotel_02.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h3>デラックスタイプ<br> ECONOMY TYPE</h3>
+						<p class="card-text">五感を癒す森のぬくもり四季折々の森の彩を多彩なお部屋でお楽しみください</p>
+					</div>
+				</div>
+				<div id="room3" class="card" style="display: none">
+					<div class="cross">
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</div>
+					<img src="./image/05/hotel_05.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h3>エコノミータイプ<br> ECONOMY TYPE</h3>
+						<p class="card-text">五感を癒す森のぬくもり四季折々の森の彩を多彩なお部屋でお楽しみください</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="footerLogo"><img src="./image/logoWhite-08.png" alt=""></div>
+			<div class="footerLeft">
+				<p>
+					パウダースノーリゾート<br> 025-783-4100 〒949-6423 <br>
+					新潟県南魚沼市舞子1819-79 <br>
+					パウダー日帰りスキ</p>
+			</div>
+			<div class="footerCenter">
+				<p>
+					会社情報 <br>ライブカメラ <br>グリーンパーク山東 <br>プライバシーポリシー</p>
+			</div>
+			<div class="footerRight">
+				<p> 予約状況 <br>イベント一覧 <br>イベントを主催したい方 <br>モーターパーク</p>
+			</div>
+		</div>
+		<div class="footerLast">
+			<span> ご利用規約</span>
+			<span> 運営会社</span>
+			<span> よくあるご質問</span>
+			<span> 安全報告書</span>
+		</div>
+	</footer>
+
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+	</script>
+	<script src="./js/common.js"></script>
+	<script src="./js/velocity.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		(function () {
+			var support = {
+					transitions: Modernizr.csstransitions
+				},
+				transEndEventNames = {
+					'WebkitTransition': 'webkitTransitionEnd',
+					'MozTransition': 'transitionend',
+					'OTransition': 'oTransitionEnd',
+					'msTransition': 'MSTransitionEnd',
+					'transition': 'transitionend'
+				},
+				transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
+				onEndTransition = function (el, callback) {
+					var onEndCallbackFn = function (ev) {
+						if (support.transitions) {
+							if (ev.target != this) return;
+							this.removeEventListener(transEndEventName, onEndCallbackFn);
+						}
+						if (callback && typeof callback === 'function') {
+							callback.call(this);
+						}
+					};
+					if (support.transitions) {
+						el.addEventListener(transEndEventName, onEndCallbackFn);
+					} else {
+						onEndCallbackFn();
+					}
+				};
+
+			new GridFx(document.querySelector('.grid'), {
+				imgPosition: {
+					x: -0.5,
+					y: 1
+				},
+				onOpenItem: function (instance, item) {
+					instance.items.forEach(function (el) {
+						if (item != el) {
+							var delay = Math.floor(Math.random() * 50);
+							el.style.WebkitTransition = 'opacity .5s ' + delay +
+								'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay +
+								'ms cubic-bezier(.7,0,.3,1)';
+							el.style.transition = 'opacity .5s ' + delay +
+								'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay +
+								'ms cubic-bezier(.7,0,.3,1)';
+							el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+							el.style.transform = 'scale3d(0.1,0.1,1)';
+							el.style.opacity = 0;
+						}
+					});
+				},
+				onCloseItem: function (instance, item) {
+					instance.items.forEach(function (el) {
+						if (item != el) {
+							el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+							el.style.transition = 'opacity .4s, transform .4s';
+							el.style.WebkitTransform = 'scale3d(1,1,1)';
+							el.style.transform = 'scale3d(1,1,1)';
+							el.style.opacity = 1;
+
+							onEndTransition(el, function () {
+								el.style.transition = 'none';
+								el.style.WebkitTransform = 'none';
+							});
+						}
+					});
+				}
+			});
+		})();
+	</script>
+
+	<Script>
+		var bodyClass = document.body.classList,
+			lastScrollY = 0;
+		window.addEventListener('scroll', function () {
+			var st = this.scrollY;
+			// 判斷是向上捲動，而且捲軸超過 200px
+			if (st < lastScrollY) {
+				bodyClass.remove('hideUp');
+			} else {
+				bodyClass.add('hideUp');
+			}
+			lastScrollY = st;
+		});
+	</script>
+	<script>
+		closeModal_lg = document.getElementById("cd-close");
+
+		closeModal_lg.onclick = function () {
+			if (document.getElementById("outBox").style.visibility == "visible")
+				document.getElementById("outBox").style.visibility = "hidden";
+
+		}
+	</script>
+	<script>
+		function changeRoom(evt, room) {
+			var i, x, rooms;
+			x = document.getElementsByClassName("card");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+
+			}
+			rooms = document.getElementsByClassName("tablink");
+			for (i = 0; i < x.length; i++) {
+				rooms[i].className = rooms[i].className.replace(" selected", "")
+
+			}
+
+
+
+			document.getElementById(room).style.display = "block";
+			evt.currentTarget.className += " selected";
+		}
+
+
+		openModal = document.getElementsByClassName("box");
+
+
+
+			$(document).ready(function () {
+				$(window).resize(function () {
+					wdth = $(window).width();
+					if (wdth < 1007) {
+
+						for (i = 0; i < openModal.length; i++)
+							openModal[i].onclick = function () {
+								document.getElementById("modal").style.display = "block";
+								document.getElementById("outBox").style.visibility = "visible";
+							}
+
+					} else {
+						for (i = 0; i < openModal.length; i++)
+							openModal[i].onclick = function () {
+								document.getElementById("modal").style.display = "none";
+								document.getElementById("outBox").style.visibility = "hidden";
+							}
+					}
+				});
+			});
+
+			closeModal = document.getElementsByClassName("cross");
+			for (i = 0; i < openModal.length; i++)
+				closeModal[i].onclick = function () {
+					document.getElementById("modal").style.display = "none";
+					document.getElementById("outBox").style.visibility = "hidden";
+
+				}
+	</script>
+</body>
+
+</html>

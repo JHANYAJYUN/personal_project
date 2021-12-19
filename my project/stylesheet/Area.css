@@ -1,0 +1,608 @@
+.topbanner {
+    background-image: url("../image/skiarea.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin-top: 90px;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+
+}
+
+.commonTitle {
+    padding-bottom: 30px;
+}
+
+.section1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.courseMapBox {
+    width: 100%;
+}
+
+.courseMap {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.courseMap img {
+    width: 100%;
+
+}
+
+#insideBox,
+#insideBox2,
+#insideBox3,
+#insideBox4,
+#insideBox5 {
+    z-index: 99;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    transition: all 1s 0.5s;
+    box-shadow: 1px 1px 2px rgb(68, 68, 68);
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none;
+
+}
+
+.showUp {
+    background: transparent;
+}
+
+.showUp:hover {
+    cursor: pointer;
+}
+
+.test {
+
+    text-align: center;
+}
+
+.test h3 {
+    padding-top: 20px;
+    color: rgb(4, 125, 161);
+
+}
+
+.test img {
+    text-align: center;
+    margin: 2% 0;
+    width: 90%;
+}
+
+.forAll {
+    padding: 60px 0;
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+}
+
+.section1 h3 {
+
+    color: rgb(4, 125, 161);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.section1 #img_a {
+    position: absolute;
+    top: 27%;
+    left: 52%;
+}
+
+.section1 #img_b {
+    position: absolute;
+    top: 46%;
+    left: 17%;
+}
+
+.section1 #img_c {
+    position: absolute;
+    top: 28%;
+    left: 38%;
+}
+
+.section1 #img_d {
+    position: absolute;
+    top: 32%;
+    left: 73%;
+}
+
+.section1 #img_e {
+    position: absolute;
+    top: 50%;
+    left: 62%;
+}
+
+.courseMap li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.section2 {
+    padding: 100px 0;
+    width: 100%;
+}
+
+.skiArea {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.skiAreaPic {
+    width: 100%;
+    text-align: center;
+
+}
+
+.skiAreaPic img {
+    width: 100%;
+}
+
+
+.forKis {
+    padding: 50px 0 0 0;
+}
+
+.forKis p {
+    text-align: center;
+    font-size: 1.437rem;
+    color: rgb(27, 27, 27);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#section3 {
+    width: 100%;
+    background-image: url("../image/白底圖.jpg");
+
+}
+
+.section3 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.topPic,
+.centerPic,
+.downPic,
+.lastdownPic {
+    width: 100%;
+    display: flex;
+}
+
+.topLeft,
+.topright,
+.centerLeft,
+.centeright,
+.downLeft,
+.downright,
+.lastdownLeft,
+.lastdownright {
+
+    width: 50%;
+    height: 550px;
+    margin: 1% 5%;
+
+}
+
+
+.mainPic img {
+    width: 100%;
+    margin-bottom: 7%;
+    transition: all 1s;
+}
+
+.maintitle {
+    margin: 0 auto;
+    height: 35px;
+    width: 70%;
+    background-color: #D56365;
+
+}
+
+.maintitle p {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(253, 253, 253);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.h4 {
+    margin: 20px 0 0 0;
+}
+
+.mainText h4 p {
+    color: rgb(4, 125, 161);
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.mainText {
+    width: 100%;
+
+}
+
+.mainText p {
+    text-align: left;
+    font-size: 0.875rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+    .courseMap {
+        position: relative;
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+
+    }
+
+
+    .forAll {
+        width: 80%;
+    }
+
+    .skiArea {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .section1 #img_a {
+        position: absolute;
+        top: 25%;
+        left: 36%;
+    }
+
+
+    .section1 #img_b {
+        position: absolute;
+        top: 41%;
+        left: 15%;
+    }
+
+    .section1 #img_c {
+        position: absolute;
+        top: 23%;
+        left: 51%;
+    }
+
+    .section1 #img_d {
+        position: absolute;
+        top: 27%;
+        left: 73%;
+    }
+
+    .section1 #img_e {
+        position: absolute;
+        top: 45%;
+        left: 60%;
+    }
+
+
+    .forKis {
+        padding: 50px 0 0 0;
+    }
+
+    .forKis p {
+        text-align: center;
+        font-size: 1.437rem;
+        color: rgb(27, 27, 27);
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .maintitle {
+        margin: 0 auto;
+        height: 35px;
+        width: 85%;
+        background-color: #D56365;
+
+    }
+
+    .maintitle p {
+        padding-top: 2%;
+        text-align: center;
+        font-size: 14px;
+        color: rgb(253, 253, 253);
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width:767px) {
+    .courseMapBox {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .courseMap {
+        position: relative;
+        width: 100%;
+        min-width: 768px;
+        margin: 0 auto;
+
+    }
+    #insideBox,
+    #insideBox2,
+    #insideBox3,
+    #insideBox4,
+    #insideBox5 {
+        z-index: 99;
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        transition: all 1s 0.5s;
+        box-shadow: 1px 1px 2px rgb(68, 68, 68);
+    }
+    .test h3 {
+        padding-top: 20px;
+        font-size: 20px;
+        color: rgb(4, 125, 161);
+
+    }
+
+    .section1 #img_a {
+        position: absolute;
+        top: 24%;
+        left: 37%;
+    }
+
+
+    .section1 #img_b {
+        position: absolute;
+        top: 42%;
+        left: 15%;
+    }
+
+    .section1 #img_c {
+        position: absolute;
+        top: 23%;
+        left: 51%;
+    }
+
+    .section1 #img_d {
+        position: absolute;
+        top: 27%;
+        left: 73%;
+    }
+
+    .section1 #img_e {
+        position: absolute;
+        top: 44%;
+        left: 60%;
+    }
+
+    .forAll {
+        width: 90%;
+    }
+
+    .section1 h3 {
+        font: 14px;
+        color: rgb(4, 125, 161);
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .skiArea {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .section3 {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .topPic,
+    .centerPic,
+    .downPic,
+    .lastdownPic {
+
+        width: 100%;
+        display: block;
+
+    }
+
+    .topLeft,
+    .topright,
+    .centerLeft,
+    .centeright,
+    .downLeft,
+    .downright,
+    .lastdownLeft,
+    .lastdownright {
+
+        width: 80%;
+        height: 550px;
+        margin: 0 auto;
+
+
+    }
+
+    .maintitle {
+        margin: 0 auto;
+        height: 35px;
+        width: 65%;
+        background-color: #D56365;
+
+    }
+
+    .maintitle p {
+        padding-top: 2%;
+        text-align: center;
+        font-size: 14px;
+        color: rgb(253, 253, 253);
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+
+}
+
+@media screen and (max-width: 499px) {
+
+    .courseMapBox {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .courseMap {
+        position: relative;
+        width: 100%;
+        min-width: 768px;
+        margin: 0 auto;
+
+    }
+
+    .section1 #img_a {
+        position: absolute;
+        top: 24%;
+        left: 37%;
+    }
+
+
+    .section1 #img_b {
+        position: absolute;
+        top: 42%;
+        left: 15%;
+    }
+
+    .section1 #img_c {
+        position: absolute;
+        top: 23%;
+        left: 51%;
+    }
+
+    .section1 #img_d {
+        position: absolute;
+        top: 27%;
+        left: 73%;
+    }
+
+    .section1 #img_e {
+        position: absolute;
+        top: 44%;
+        left: 60%;
+    }
+
+    .forAll {
+        width: 90%;
+    }
+
+    .section1 h3 {
+        font: 14px;
+        color: rgb(4, 125, 161);
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .skiArea {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .section3 {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .topPic,
+    .centerPic,
+    .downPic,
+    .lastdownPic {
+
+        width: 100%;
+        display: block;
+
+    }
+
+    .topLeft,
+    .topright,
+    .centerLeft,
+    .centeright,
+    .downLeft,
+    .downright,
+    .lastdownLeft,
+    .lastdownright {
+
+        width: 90%;
+        height: 550px;
+        margin: 0 auto;
+
+    }
+
+    .maintitle {
+        margin: 0 auto;
+        height: 35px;
+        width: 80%;
+        background-color: #D56365;
+
+    }
+
+    .maintitle p {
+        padding-top: 2%;
+        text-align: center;
+        font-size: 14px;
+        color: rgb(253, 253, 253);
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    #insideBox,
+    #insideBox2,
+    #insideBox3,
+    #insideBox4,
+    #insideBox5 {
+        z-index: 99;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        transition: all 1s 0.5s;
+        box-shadow: 1px 1px 2px rgb(68, 68, 68);
+    }
+
+    .test h3 {
+        padding-top: 20px;
+        font-size: 14px;
+        color: rgb(4, 125, 161);
+
+    }
+
+
+
+
+}

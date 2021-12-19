@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>レンタル＆ショップ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheet/animate.min.css">
+    <link rel="stylesheet" href="./stylesheet/hamburgers.css">
+    <link rel="stylesheet" href="./stylesheet/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./stylesheet/owl.carousel.min.css">
+    <link rel="stylesheet" href="./stylesheet/Common.css">
+    <link rel="stylesheet" href="./stylesheet/Rental.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="suportArea">
+            <a href="./form.html">
+                <div class="suport"><span> お問い合わせ</span></div>
+            </a>
+        </div>
+        <div id="headerBanner">
+            <nav id="navbar2">
+                <ul>
+                    <li class="logo"><a href="./index.html">
+                            <img src="./image/logo_black-08.png" alt=""></a>
+                    </li>
+                    <li><a href="./Area.html">
+                            <div class="underline">
+                                <p>ゲレンデ</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Lift.html">
+                            <div class="underline">
+                                <p>リフト料金</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+                    <li id="hotelBox2" onmouseover="switchMenu2( this, 'hotelBoxInside2', 'MouseOver' )"
+                        onmouseout="hideMenu2()"> <a href="#">
+                            <div class="circle">
+                                <p>ホテル</p>
+                            </div>
+                        </a>
+                        <div id="hotelBoxInside2">
+                            <ul>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/Navhotel1.jpg" alt="">
+                                        <h5>王子第一ホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel2.jpg" alt="">
+                                        <h5>パウダーホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel3.jpg" alt="">
+                                        <h5>綾会館</h5>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./Dining.html">
+                            <div class="underline">
+                                <p> レストラン</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Rental.html">
+                            <div class="underline">
+                                <p style="color: rgba(182, 155, 0, 0.9); font-weight: 700;">レンタル</p>
+                            </div>
+                        </a></li>
+
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./school.html">
+                            <div class="underline">
+                                <p> スクール</p>
+                            </div>
+                        </a></li>
+
+                </ul>
+            </nav>
+
+
+            <div id="ham">
+                <ul>
+                    <a href="./index.html">
+                        <li>
+                            <h2>トップページ</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Area.html">
+                        <li>
+                            <h2> ゲレンデ</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Lift.html">
+                        <li>
+                            <h2>リフト料金</h2>
+                        </li>
+                    </a><br>
+                    <a href="#">
+                        <li>
+                            <h2>ホテル</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Dining.html">
+                        <li>
+                            <h2>レストラン</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Rental.html">
+                        <li>
+                            <h2>レンタル</h2>
+                        </li>
+                    </a><br>
+                    <a href="./school.html">
+                        <li>
+                            <h2>スクール</h2>
+                        </li>
+                    </a><br>
+                    <a href="./form.html">
+                        <li>
+                            <h2>お問い合わせ<h2>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div id="hamIcon">
+                <button type="button" name="btn" class="hamburger hamburger--slider" id="hamburgerIcon">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <div class="hamburgerBlack"><img src="./image/hamburger-Circle.svg" alt=""></div>
+
+                </button>
+            </div>
+
+        </div>
+        <div class="quide">
+            <p>RENTAL & SHOP</p>
+        </div>
+        <div class="topbanner"></div>
+    </header>
+    <main>
+        <div id="outBox"> </div>
+        <div class="commonTitle">
+            <div class="commonTitleEn">
+                <h2>New Arrive</h2>
+            </div>
+            <div class="commonTitleJp">
+                <h4>人気ブランド到着 </h4>
+            </div>
+        </div>
+        <div id="arriveTitle">
+            <div class="arriveTitle">
+                <h3>メンズ <br><span> Man</span></h3>
+            </div>
+            <div class="arriveTitle_forLg arriveTitle">
+                <h3> レディース<br><span> Woman</span></h3>
+            </div>
+
+        </div>
+        <section id="newArrive">
+            <div class="newArriveLeft">
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+
+                        <img src="./image/Line-Pandora-94.jpg" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+                        <img src="./img1.png" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+                        <img src="./image/BoradPic6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+                        <img src="./image/Burton-LTR.jpg" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+                        <img src="./image/boradPic7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+
+                        <img src="./image/BoradPic1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="insideBox">
+                <div type="button" name="btn" class="btn_modal" id="closeDown">
+                    <div class="cross">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                <div id="test">
+                    <div class="insideBoxLeft">
+                        <div class="insideBoxTopText">
+                            <h2>｜ローム</h2>
+                            <h2> Rome Heist</h2>
+                        </div>
+                        <div class="insideBoxCenterText">
+                            <h4>モデル:Flying V </h4>
+                            <h4> 硬さ:硬い</h4>
+                            <h4> サイズ:139 / 143 / 147 / 151</h4>
+                            <h4> 地形:オールマウンテン</h4>
+                            <h4> レベル:中級, 上級</h4>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="firstPic"><img src="img1.png" alt="" id="bgimg"></div>
+                        <div class="firstPic1">
+                            <img src="img1.png" alt="" class="thumb" data-image="img1.png">
+                            <img src="img2.png" alt="" class="thumb" data-image="img2.png">
+                            <img src="img3.png" alt="" class="thumb" data-image="img3.png">
+                            <img src="img4.png" alt="" class="thumb" data-image="img4.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="arriveTitle_forSm arriveTitle">
+                <h3>レディース<br><span> Woman</span></h3>
+            </div>
+            <div class="newArriveRight">
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+
+                        <img src="./image/BoradPic8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+
+                        <img src="./image/Rome-Winterland.jpg" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+
+                        <img src="./image/BoradPic9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+
+                        <img src="./image/GNU-Mullair.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+
+                        <img src="./image/Black-Crows-Magnis-Birdie.jpg" alt="">
+                    </div>
+                </div>
+                <div class="showUp wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1s">
+                    <div class="picText">
+                        <div class="glass"></div>
+                        <h4>Burton</h4> <br>
+                        <p>made in 2002 </p>
+
+                        <img src="./image/Burton-Deep-Thinker.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+            <div class="clearFloat"></div>
+
+        </section>
+        <section class="page-wrapper" id="coidea">
+
+            <div class="slider">
+
+                <ul class="slider-list">
+
+                    <li class="slider-list__item slider-list__item_active">
+                        <span class="back__element">
+                            <!-- <img src="/0915NewDemo/圓弧輪播套件/assets/img/back_apple_002.png" /> -->
+                        </span>
+                        <span class="main__element">
+                            <img src="./image/skiboots.png" />
+                        </span>
+                        <span class="front__element">
+                            <img src="./image/bootsFront.png" />
+                        </span>
+                        <span class="title__element">
+                            <span class="title">Ski Boots</span>
+                        </span>
+                        <span class="more__element">
+                            <span class="content">
+                                <span class="headline">Ski Boots</span>
+                                <span class="excerpt">極限の軽さとフリーライドスキーの多様性を融合させ、妥協なきフリースキーのパフォーマンスを提供。</span>
+                                <div class="linkBtn">
+                                    <a href="#">
+                                        <div class="view_more">
+                                            <h4>view detail</h4>
+                                        </div>
+
+                                        <div class="circleBrn">
+                                            <div class="loadOne">
+                                                <div class="circleArrow"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </span>
+                        </span>
+                    </li>
+
+                    <li class="slider-list__item">
+                        <span class="back__element">
+                            <!-- <img src="/0915NewDemo/圓弧輪播套件/assets/img/front_grapes_001.png" /> -->
+                        </span>
+                        <span class="main__element">
+                            <img src="./image/Snowboard.png" />
+                        </span>
+                        <span class="front__element">
+                            <img src="./image/rentalSnowboard.png" />
+                        </span>
+                        <span class="title__element">
+                            <span class="title">Snowboard</span>
+                        </span>
+                        <span class="more__element">
+                            <span class="content">
+                                <span class="headline">Snowboard</span>
+                                <span class="excerpt">斬新なシェイプとオールラウンドなパフォーマンス、驚くほどに軽い操作性と旋回性の人気ボード。</span>
+                                <div class="linkBtn">
+                                    <a href="#">
+                                        <div class="view_more">
+                                            <h4>view more</h4>
+                                        </div>
+
+                                        <div class="circleBrn">
+                                            <div class="loadOne">
+                                                <div class="circleArrow"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </span>
+                        </span>
+                    </li>
+
+                    <li class="slider-list__item">
+                        <span class="back__element">
+                            <!-- <img src="/0915NewDemo/圓弧輪播套件/assets/img/front_strawberry_003.png" /> -->
+                        </span>
+                        <span class="main__element">
+                            <img src="./image/ski.png" />
+                        </span>
+                        <span class="front__element">
+                            <img src="./image/bootsFront.png" />
+                        </span>
+                        <span class="title__element">
+                            <span class="title">Ski Board</span>
+                        </span>
+                        <span class="more__element">
+                            <span class="content">
+                                <span class="headline">Ski Board</span>
+                                <span class="excerpt">豊富な最新モデル-
+                                    初心者用から、新雪やツリーランを楽しまれる上級者用まで、メンズ、レディース用まですべて取り揃えております。</span>
+                                <div class="linkBtn">
+                                    <a href="#">
+                                        <div class="view_more">
+                                            <h4>view more</h4>
+                                        </div>
+
+                                        <div class="circleBrn">
+                                            <div class="loadOne">
+                                                <div class="circleArrow"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </span>
+                        </span>
+                    </li>
+
+                </ul>
+                <div class="slider__nav-bar">
+                    <a class="nav-control"></a>
+                    <a class="nav-control"></a>
+                    <a class="nav-control"></a>
+                </div>
+
+                <div class="slider__controls">
+                    <a class="slider__arrow slider__arrow_prev"></a>
+                    <a class="slider__arrow slider__arrow_next"></a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section2">
+
+            <div class="tableTitle">
+                <p>レンタル料金表</p>
+            </div>
+
+            <div class="tableTitleText">セットプラン(まずは始めてみようかなという方にピッタリ!)</div>
+            <div class="tableTitleLine">
+            </div>
+            <table class="table table-hover wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s" id="RentalForm" id="RentalForm">
+                <thead>
+                    <tr>
+                        <th scope="col">種類</th>
+                        <td scope="col">大人</td>
+                        <td scope="col">子供</td>
+                        <td scope="col">幼児</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">スキーウェアセット
+                            (スキー基本セット+ウェア上下)</th>
+                        <td>￥3,500</td>
+                        <td>￥5,200</td>
+                        <td>￥4,200</td>
+                    </tr>
+                    <tr>
+                        <!-- <th scope="row">2</th> -->
+                        <th scope="row">スキーウェアセット
+                            (スキー上等セット+ウェア上下)</th>
+                        <td>￥6,000</td>
+                        <td>￥5,200</td>
+                        <td>￥4,200</td>
+                    </tr>
+                    <tr>
+                        <!-- <th scope="row">3</th> -->
+                        <th scope="row">スキーウェアセット
+                            (スキー割引セット+ウェア上下)</th>
+                        <td>￥5,000</td>
+                        <td>￥4,200</td>
+                        <td>￥3,200</td>
+                    </tr>
+                    <tr>
+                        <!-- <th scope="row">3</th> -->
+                        <th scope="row">スキーウェアセット
+                            (スキー子供セット+ウェア上下)</th>
+                        <td>￥6,000</td>
+                        <td>￥5,200</td>
+                        <td>￥4,200</td>
+                    </tr>
+                    <tr>
+                        <!-- <th scope="row">3</th> -->
+                        <th scope="row">スキーウェアセット
+                            (スキー基本セット+ウェア上下)</th>
+                        <td>￥6,000</td>
+                        <td>￥5,200</td>
+                        <td>￥4,200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="break"></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="./image/qq1burton-logo.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq2.svg" alt=""></h4>
+            </div>
+            <div class="item">
+                <img src="./image/qq3.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq4.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq5.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq6.png" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq7.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq8.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq9.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq10.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq11.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq2.svg" alt=""></h4>
+            </div>
+            <div class="item">
+                <img src="./image/qq3.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq4.svg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/qq5.svg" alt="">
+            </div>
+
+        </div>
+        <div class="break"></div>
+    </main>
+    <footer>
+
+        <div class="footer">
+            <div class="footerLogo"><img src="./image/logoWhite-08.png" alt=""></div>
+            <div class="footerLeft">
+                <p>
+                    パウダースノーリゾート<br> 025-783-4100 〒949-6423 <br>
+                    新潟県南魚沼市舞子1819-79 <br>
+                    パウダー日帰りスキ</p>
+            </div>
+            <div class="footerCenter">
+                <p>
+                    会社情報 <br>ライブカメラ <br>グリーンパーク山東 <br>プライバシーポリシー</p>
+            </div>
+            <div class="footerRight">
+                <p> 予約状況 <br>イベント一覧 <br>イベントを主催したい方 <br>モーターパーク</p>
+            </div>
+        </div>
+        <div class="footerLast">
+            <span> ご利用規約</span>
+            <span> 運営会社</span>
+            <span> よくあるご質問</span>
+            <span> 安全報告書</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+     <script src="./js/common.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="./js/anime.min.js" type="text/javascript"></script>
+    <script src="./js/demo.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 6,
+            loop: true,
+            margin: 6,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                500: {
+                    items: 3,
+                    nav: false
+                },
+                800: {
+                    items: 4,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: false,
+                    loop: true
+                },
+                1200: {
+                    items: 6,
+                    nav: false,
+                    loop: true
+                }
+
+            }
+        });
+    </script>
+    <script>
+        function slideToLeft() {
+            ham = document.getElementById("ham");
+            if (ham.classList.contains("show")) {
+                ham.classList.remove("show");
+            } else {
+                ham.classList.add("show");
+            }
+        }
+
+        slideHam = document.getElementsByClassName("hamburger");
+        slideHam[0].addEventListener("click", slideToLeft, false);
+        closeHam = document.getElementById("InsideHamburger");
+    </script> 
+   
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', 
+            animateClass: 'animated', 
+            offset: 0, 
+            mobile: true, 
+            live: true, 
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                
+            },
+
+        });
+        wow.init();
+    </script>
+    <Script>
+    
+        var bodyClass = document.body.classList,
+            lastScrollY = 0;
+        window.addEventListener('scroll', function () {
+            var st = this.scrollY;
+            // 判斷是向上捲動，而且捲軸超過 200px
+            if (st < lastScrollY) {
+                bodyClass.remove('hideUp');
+            } else {
+                bodyClass.add('hideUp');
+            }
+            lastScrollY = st;
+        });
+    </Script>
+
+    <script>
+        var outBox = document.getElementById("outBox");
+        var insideBox = document.getElementById("insideBox");
+
+        function showBox(e) {
+
+            outBox.style.opacity = "0.8";
+            outBox.style.zIndex = "11";
+            outBox.style.visibility = "visible";
+            insideBox.style.opacity = "1";
+            insideBox.style.visibility = "visible";
+            e ? e.stopPropagation() : event.cancelBubble = true;
+        };
+
+        function closeBox() {
+            insideBox.style.opacity = "0";
+            insideBox.style.visibility = "hidden";
+            outBox.style.opacity = "0";
+            outBox.style.zIndex = "-1";
+
+        };
+
+        if (insideBox.style.opacity = "1") {
+            outBox.onclick = function (e) {
+                insideBox.style.opacity = "0";
+                insideBox.style.visibility = "hidden";
+                outBox.style.opacity = "0";
+                outBox.style.zIndex = "-1";
+            }
+        }
+
+
+        function init() {
+            btns = document.getElementsByClassName("showUp");
+            for (i = 0; i < btns.length; i++) {
+                btns[i].onclick = showBox;
+            }
+            btnsCross = document.getElementById("closeDown");
+            btnsCross.onclick = closeBox;
+            insideBox.onclick = function (e) {
+                e.stopPropagation();
+            };
+
+        }
+        window.onload = init;
+    </script>
+    <script>
+        var thumbs = document.querySelectorAll(".thumb");
+        for (var i = 0; i < thumbs.length; i++) {
+
+            thumbs[i].onclick = function () {
+                console.log("this.dataset.image");
+                document.getElementById("bgimg").src = this.dataset.image;
+            };
+        }
+    </script>
+</body>
+
+</html>

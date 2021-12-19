@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>リフト紹介</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./stylesheet/hamburgers.css">
+    <link rel="stylesheet" href="./stylesheet/animate.min.css">
+    <link rel="stylesheet" href="./stylesheet/Common.css">
+    <link rel="stylesheet" href="./stylesheet/Lift.css">
+</head>
+
+<body>
+    <header>
+        <div class="suportArea">
+            <a href="./form.html">
+                <div class="suport"><span> お問い合わせ</span></div>
+            </a>
+        </div>
+        <div id="headerBanner">
+            <nav id="navbar2">
+                <ul>
+                    <li class="logo"><a href="./index.html">
+                            <img src="./image/logo_black-08.png" alt=""></a>
+                    </li>
+                    <li><a href="./Area.html">
+                            <div class="underline">
+                                <p>ゲレンデ</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Lift.html">
+                            <div class="underline">
+                                <p style="color: rgba(182, 155, 0, 0.9); font-weight: 700;">リフト料金</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+                    <li id="hotelBox2" onmouseover="switchMenu2( this, 'hotelBoxInside2', 'MouseOver' )"
+                        onmouseout="hideMenu2()"> <a href="#">
+                            <div class="circle">
+                                <p>ホテル</p>
+                            </div>
+                        </a>
+                        <div id="hotelBoxInside2">
+                            <ul>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/Navhotel1.jpg" alt="">
+                                        <h5>王子第一ホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel2.jpg" alt="">
+                                        <h5>パウダーホテル</h5>
+                                    </li>
+                                </a>
+                                <a href="./hotel.html">
+                                    <li><img src="./image/navhotel3.jpg" alt="">
+                                        <h5>綾会館</h5>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./Dining.html">
+                            <div class="underline">
+                                <p> レストラン</p>
+                            </div>
+                        </a></li>
+                    <li class="bline">
+                    </li>
+
+                    <li> <a href="./Rental.html">
+                            <div class="underline">
+                                <p>レンタル</p>
+                            </div>
+                        </a></li>
+
+                    <li class="bline">
+                    </li>
+                    <li> <a href="./school.html">
+                            <div class="underline">
+                                <p> スクール</p>
+                            </div>
+                        </a></li>
+
+                </ul>
+            </nav>
+
+
+            <div id="ham">
+                <ul>
+                    <a href="./index.html">
+                        <li>
+                            <h2>トップページ</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Area.html">
+                        <li>
+                            <h2> ゲレンデ</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Lift.html">
+                        <li>
+                            <h2>リフト料金</h2>
+                        </li>
+                    </a><br>
+                    <a href="./hotel.html">
+                        <li>
+                            <h2>ホテル</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Dining.html">
+                        <li>
+                            <h2>レストラン</h2>
+                        </li>
+                    </a><br>
+                    <a href="./Rental.html">
+                        <li>
+                            <h2>レンタル</h2>
+                        </li>
+                    </a><br>
+                    <a href="./school.html">
+                        <li>
+                            <h2>スクール</h2>
+                        </li>
+                    </a><br>
+                    <a href="./form.html">
+                        <li>
+                            <h2>お問い合わせ<h2>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div id="hamIcon">
+                <button type="button" name="btn" class="hamburger hamburger--slider" id="hamburgerIcon">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <div class="hamburgerBlack"><img src="./image/hamburger-Circle.svg" alt=""></div>
+
+                </button>
+            </div>
+
+        </div>
+
+        <div class="quide">
+            <p>LIFT TICKET</p>
+        </div>
+        <div class="topbanner"></div>
+    </header>
+
+    <div id="openTime">
+        <div class="openTime wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s ">
+            <p>リフト営業時間</p>
+            <div class="liftPic1"><img src="./image/fee_img01.png" alt=""></div>
+            <div class="liftPic2"><img src="./image/fee_main_icon01.png" alt=""></div>
+        </div>
+
+        <table id="openTimeForm" class="openTimeFormContent wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s ">
+            <tr class="openTimeForm ">
+                <td class="openTimeFormTitle">日中営業</td>
+                <td>2019年 12月21日（土）～2020年 3月31日（火）　毎日</td>
+                <td> 8：30～17：00</td>
+
+            </tr>
+            <tr class="openTimeForm">
+                <td class="openTimeFormTitle" rowspan="2">ナイター営業</td>
+                <td>2019年 12月21日（土）～22日（日）　毎日 <br>
+                    2019年 12月27日（金）～2020年 1月31日（金）　毎日</td>
+                <td rowspan="2">17：00～21：00</td>
+
+            </tr>
+            <tr class="openTimeForm">
+                <td>2020年 2月1日（土）～3月15日（日）<br>　金・土・日曜日・祝日</td>
+            </tr>
+        </table>
+
+        <table id="openTimeForm_forSm">
+            <tr class="openTimeForm">
+                <td>日中営業 </td>
+            </tr>
+            <tr class="openTimeForm">
+                <td>2019年 12月21日（土）～2020年 3月31日（火）　毎日
+                    <span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span> </td>
+            </tr>
+            <tr class="openTimeForm">
+                <td> 8：30～17：00</td>
+            </tr>
+        </table>
+
+        <table id="openTimeForm_forSm">
+            <tr class="openTimeForm">
+                <td>ナイター営業</td>
+            </tr>
+            <tr class="openTimeForm">
+                <td>2019年 12月21日（土）～22日（日）　毎日
+                    2019年 12月27日（金）～2020年 1月31日（金）　毎日</td>
+            </tr>
+            <tr class="openTimeForm">
+                <td>17：00～21：00</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="ticket"><img src="./image/bnr_season-ticket-2019_pc.png" alt=""></div>
+    <div id="ticketFee">
+        <div class="openTime wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            <p>リフト券料金</p>
+        </div>
+        <div class="container">
+            <!-- <div class="row"> -->
+            <!-- <div class="col-md-offset-3 col-md-6"> -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <section class="panel panel-default" role="tab" id="headingOne">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                一日券
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                        aria-labelledby="headingOne">
+                        <p class="panel-body">
+                            <table class="fancytable">
+                                <tr class="headerrow">
+                                    <td>券種</td>
+                                    <td>大人</td>
+                                    <td>シニア・中高生 </td>
+                                    <td>小学生</td>
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td>半日券（8：30～14：00／11：00～17：00）</td>
+                                    <td>￥3,600</td>
+                                    <td>￥2,900</td>
+                                    <td>￥2,500</td>
+                                </tr>
+                                <tr class="datarowodd">
+                                    <td>1日券(営業開始～当日の17:00)</td>
+                                    <td>￥4,500</td>
+                                    <td>￥3,500</td>
+                                    <td>￥2,500</td>
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td>2日券(営業開始～翌日の17:00)</td>
+                                    <td>￥8,000</td>
+                                    <td>￥6,200</td>
+                                    <td>￥4,500</td>
+                                </tr>
+
+                            </table>
+
+
+                    </div>
+                </section>
+                <section class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                回数券
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <p class="panel-body">
+                            <table class="fancytable">
+                                <tr class="headerrow">
+                                    <td>券種</td>
+                                    <td>大人</td>
+                                    <td>シニア・中高生 </td>
+                                    <td>小学生</td>
+                                </tr>
+                                <tr class="datarowodd">
+                                    <td>5時間券</td>
+                                    <td>￥3,800</td>
+                                    <td>￥2,900</td>
+                                    <td>￥2,000</td>
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td>１回券</td>
+                                    <td>￥420</td>
+                                    <td>￥350</td>
+                                    <td>￥300</td>
+                                </tr>
+                                <tr class="datarowodd">
+                                    <td>8回券</td>
+                                    <td>￥3,150</td>
+                                    <td>￥2,600</td>
+                                    <td>￥2,200</td>
+                                </tr>
+                            </table>
+
+                    </div>
+                </section>
+                <section class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ナイター券
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                        aria-labelledby="headingThree">
+                        <p class="panel-body">
+
+                            <table class="fancytable">
+                                <tr class="headerrow">
+                                    <td>券種</td>
+                                    <td>大人</td>
+                                    <td>シニア・中高生 </td>
+                                    <td>小学生</td>
+                                </tr>
+                                <tr class="datarowodd">
+                                    <td>ナイター券（17：00～21：00）</td>
+                                    <td>￥2,400</td>
+                                    <td>￥2,100 </td>
+                                    <td>￥1,600</td>
+                                </tr>
+                                <tr class="dataroweven">
+                                    <td>ロングナイター券（15：00～21：00）</td>
+                                    <td>￥3,600</td>
+                                    <td>￥2,900 </td>
+                                    <td>￥2,500</td>
+                                </tr>
+                            </table>
+
+                            <!-- </div> -->
+                </section>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="parkFee">
+        <div class="priceRule">
+            <p>スマイルキッズパーク 利用料金</p>
+
+        </div>
+        <div class="parkFee">
+            <h5>リフト券をお持ちでも別に入場料1,000円が必要です</h5>
+            <img src="./image/fee_img06.png" alt="">
+
+            <div class="parkFeeLine wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            </div>
+            <div class="parkP_One wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <p>乗降車時、不安のある方（初心者等）は遠慮なく係員にお申し出ください。減速（一時的にゆっくりにする）や一旦停止させて頂きます。
+                </p>
+            </div>
+
+            <div class="parkP_Two wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <p>また、小さなお子様の乗降車等も出来る限りお手伝いさせて頂きます。スーパークワッドリフト及びラビットトリプルリフトは、冬季上り専用となります。下り線への乗車は一切出来ませんのでご了承ください。
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div id="beginnerFee">
+        <div class="priceRule ">
+            <p>ビギナーズエリア 利用料金</p>
+            <img src="./image/fee_img07.png" alt="">
+        </div>
+        <div class="beginnerFee wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h5>リフト券かスマイルキッズパーク、どちらかのチケットでご利用いただけます</h5>
+            <div class="beginnerFee_One">
+                <p>ロープウェイは、点検の為、半日又は終日運休する場合がございます。ロープウェイの運休はいずれも機械整備の為の定期点検です。大変ご迷惑お掛けいたしますが、安全運行の為にご協力ください。
+                </p>
+            </div>
+
+            <div class="beginnerFee_Two">
+                <p>スーパークワッドリフト及びラビットトリプルリフトは、冬季上り専用となります。下り線への乗車は一切出来ませんのでご了承ください。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="rule">
+
+        <div class="priceRule">
+            <p>料金案内</p>
+        </div>
+        <ul class="ulText wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">【シーズン券について】
+            <li style="margin-top: 20px;">シーズン券はロープウエイ、リフト、スノーウォーカー共にご利用頂けます。</li>
+            <li>シーズン券をお求めの際は、①シーズン券添付用の写真を１枚 ②免許証等、本人確認ができるものをご用意ください。</li>
+            <li>シーズン券に必要な写真は、30mm×25mm 1枚です。</li>
+        </ul>
+        <ul class="ulText wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">【回数券について】
+            <li style="margin-top: 20px;">回数券は、1回券のみの販売になります。</li>
+            <li>昨シーズンお求めになった回数券で、余っている券のご利用、換金には一切応じることができません。</li>
+        </ul>
+        <ul class="ulText wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">【ご利用いただける滑走用具について】
+            <li style="margin-top: 20px;">スキー場でご利用いただける滑走用具は、こちらからご確認ください。</li>
+        </ul>
+        <ul class="ulText wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">【リフト・ロープウェイ運休について】
+            <li style="margin-top: 20px;">トリプルリフトは平日等混雑状況によって予告なく運休する場合がございます。</li>
+            <li>ロープウェイは、点検の為、半日又は終日運休する場合がございます。</li>
+            <li>ロープウェイの運休はいずれも機械整備の為の定期点検です。大変ご迷惑お掛けいたしますが、安全運行の為にご協力ください。</li>
+        </ul>
+        <ul class="ulText wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">【リフト乗車時の注意とご案内】
+            <li style="margin-top: 20px;">
+                リフト乗車時には、必ず滑走用具を装着して頂くようお願いしております。これはもしスキーやスノーボードをリフトから落としてしまった場合、コース内にいる他のお客様へ当たってしまったら大事故につながってしまう等を防ぐ為で、全てのお客様に対しお願いしております。初心者・上級者を問わず、より安全な運行にご協力ください。
+            </li>
+            <li>スノーボーダーの皆様へ。リフト乗降車時、スノーボードの板を滑走方向にまっすぐに向けるようにして下さい、滑走面に対し横向きにした場合、エッジが引っ掛かり、大変危険です。また、乗り合わせた他のお客様にも迷惑が掛かってしまうことがありますので十分ご注意ください。
+            </li>
+            <li>リフト乗車中は、お客様の安全確保の為「セフティーバー」を必ず下ろすようお声をかけさせていただいております。お客様ご自身の安全確保となりますので何卒ご協力お願い致します。</li>
+            <li>乗降車時、不安のある方（初心者等）は遠慮なく係員にお申し出ください。減速（一時的にゆっくりにする）や一旦停止させて頂きます。また、小さなお子様の乗降車等も出来る限りお手伝いさせて頂きます。</li>
+            <li> スーパークワッドリフト及びラビットトリプルリフトは、冬季上り専用となります。下り線への乗車は一切出来ませんのでご了承ください。</li>
+        </ul>
+        <ul class="ulText wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            【チケット購入時に使用できるカード】
+        </ul>
+        <ul class="ulText" id="paymentPic">
+            <li class="paymentPic1 "><img src="./image/img02.jpg" alt=""></li>
+            <li class="paymentPic2"><img src="./image/img03.jpg" alt=""></li>
+        </ul>
+
+    </div>
+    <footer>
+
+        <div class="footer">
+            <div class="footerLogo"><img src="./image/logoWhite-08.png" alt=""></div>
+            <div class="footerLeft">
+                <p>
+                    パウダースノーリゾート<br> 025-783-4100 〒949-6423 <br>
+                    新潟県南魚沼市舞子1819-79 <br>
+                    パウダー日帰りスキ</p>
+            </div>
+            <div class="footerCenter">
+                <p>
+                    会社情報 <br>ライブカメラ <br>グリーンパーク山東 <br>プライバシーポリシー</p>
+            </div>
+            <div class="footerRight">
+                <p> 予約状況 <br>イベント一覧 <br>イベントを主催したい方 <br>モーターパーク</p>
+            </div>
+        </div>
+        <div class="footerLast">
+            <span> ご利用規約</span>
+            <span> 運営会社</span>
+            <span> よくあるご質問</span>
+            <span> 安全報告書</span>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="./js/common.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', 
+            animateClass: 'animated', 
+            offset: 0, 
+            mobile: true,
+            live: true, 
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            
+            },
+
+        });
+        wow.init();
+    </script>
+    <Script>
+     
+
+
+        var bodyClass = document.body.classList,
+            lastScrollY = 0;
+        window.addEventListener('scroll', function () {
+            var st = this.scrollY;
+            // 判斷是向上捲動，而且捲軸超過 200px
+            if (st < lastScrollY) {
+                bodyClass.remove('hideUp');
+            } else {
+                bodyClass.add('hideUp');
+            }
+            lastScrollY = st;
+        });
+    </Script>
+</body>
+
+</html>
